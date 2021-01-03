@@ -1,0 +1,480 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.75 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.77 secs
+ 
+--> Reading design: SinGenerator6.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SinGenerator6.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SinGenerator6"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : SinGenerator6
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : Yes
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 2
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/0/SinGenerator6/HSineTable.vhd" in Library work.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 50. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 51. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 53. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 54. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 56. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 57. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 59. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 60. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 62. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 63. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 65. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 66. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 68. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 69. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 71. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 72. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 74. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 75. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 77. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 78. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 80. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 81. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 83. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 84. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 86. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 87. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 89. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 90. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 92. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 93. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 95. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 96. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 98. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 99. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 101. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 102. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 104. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 105. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 107. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 108. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 110. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 111. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 113. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 114. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 116. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 117. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 119. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 120. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 122. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 123. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 125. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 126. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 128. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 129. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 131. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 132. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 134. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 135. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 137. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 138. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 140. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 141. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 143. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 144. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 146. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 147. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 149. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 150. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 152. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 153. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 155. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 156. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 158. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 159. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 161. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 162. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 164. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 165. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 167. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 168. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 170. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 171. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 173. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 174. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 176. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 177. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 179. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 180. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 182. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 183. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 185. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 186. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 188. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 189. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 191. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 192. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 194. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 195. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 197. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 198. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 200. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 201. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 203. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 204. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 206. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 207. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 209. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 210. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 212. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 213. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 215. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 216. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 218. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 219. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 221. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 222. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 224. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 225. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 227. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+WARNING:HDLParsers:817 - "E:/0/SinGenerator6/HSineTable.vhd" Line 228. Choice CONV_STD_LOGIC_VECTOR is not a locally static expression.
+Architecture archsinetable of Entity hsinetable is up to date.
+Compiling vhdl file "E:/0/SinGenerator6/SinGenerator6.vhd" in Library work.
+Entity <singenerator6> compiled.
+Entity <singenerator6> (Architecture <arcsingenerator6>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SinGenerator6> in library <work> (architecture <arcsingenerator6>) with generics.
+	AmpRegWidth = 8
+	ButtonTimeOutCtrWidth = 8
+	FreqNumRegWidth = 4
+	PhaseRegWidth = 8
+	SigGenCtrWidth = 6
+	UserInterfaceCtrWidth = 12
+	WaveformTypeRegWidth = 2
+
+Analyzing hierarchy for entity <HSineTable> in library <work> (architecture <archsinetable>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <SinGenerator6> in library <work> (Architecture <arcsingenerator6>).
+	AmpRegWidth = 8
+	ButtonTimeOutCtrWidth = 8
+	FreqNumRegWidth = 4
+	PhaseRegWidth = 8
+	SigGenCtrWidth = 6
+	UserInterfaceCtrWidth = 12
+	WaveformTypeRegWidth = 2
+Entity <SinGenerator6> analyzed. Unit <SinGenerator6> generated.
+
+Analyzing Entity <HSineTable> in library <work> (Architecture <archsinetable>).
+Entity <HSineTable> analyzed. Unit <HSineTable> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <HSineTable>.
+    Related source file is "E:/0/SinGenerator6/HSineTable.vhd".
+    Found 128x7-bit ROM for signal <Sine>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <HSineTable> synthesized.
+
+
+Synthesizing Unit <SinGenerator6>.
+    Related source file is "E:/0/SinGenerator6/SinGenerator6.vhd".
+    Register <DAC12_nLE_R_Copy> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC34_nLE_R> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC34_nLE_R_Copy> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC56_nLE_R> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC56_nLE_R_Copy> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC78_nLE_R> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC78_nLE_R_Copy> equivalent to <DAC12_nLE_R> has been removed
+    Register <DAC1_Data_R_Copy> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC3_Data_R> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC3_Data_R_Copy> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC5_Data_R> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC5_Data_R_Copy> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC7_Data_R> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC7_Data_R_Copy> equivalent to <DAC1_Data_R> has been removed
+    Register <DAC2_Data_R_Copy> equivalent to <DAC2_Data_R> has been removed
+    Register <DAC4_Data_R_Copy> equivalent to <DAC4_Data_R> has been removed
+    Register <DAC6_Data_R_Copy> equivalent to <DAC6_Data_R> has been removed
+    Register <DAC8_Data_R_Copy> equivalent to <DAC8_Data_R> has been removed
+    Found 16x3-bit ROM for signal <BinBus$rom0000>.
+    Found 1-bit register for signal <DAC12_nLE_R>.
+    Found 1-bit register for signal <DAC1_Data_R>.
+    Found 1-bit register for signal <DAC2_Data_R>.
+    Found 1-bit register for signal <DAC4_Data_R>.
+    Found 1-bit register for signal <DAC6_Data_R>.
+    Found 1-bit register for signal <DAC8_Data_R>.
+    Found 1-bit register for signal <BTN0_Buf>.
+    Found 1-bit register for signal <BTN1_Buf>.
+    Found 8-bit register for signal <Buffer_0>.
+    Found 8-bit register for signal <Buffer_180>.
+    Found 8-bit register for signal <Buffer_45>.
+    Found 8-bit register for signal <Buffer_90>.
+    Found 8-bit register for signal <Buffer_Usr>.
+    Found 8-bit up counter for signal <ButtonTimeOutCounter>.
+    Found 4-bit updown counter for signal <FrequencyNumberReg>.
+    Found 8-bit register for signal <PhaseReg>.
+    Found 8-bit adder for signal <PhaseReg$addsub0000>.
+    Found 8-bit adder for signal <PhaseReg$addsub0001>.
+    Found 8-bit register for signal <RefPhaseCounter>.
+    Found 8-bit adder for signal <RefPhaseCounter$mux0003>.
+    Found 6-bit up counter for signal <SigGenCounter>.
+    Found 1-bit register for signal <SigGenCtrOvf_1T>.
+    Found 1-bit register for signal <SigGenCtrOvf_2T>.
+    Found 1-bit register for signal <SigGenCtrOvf_3T>.
+    Found 1-bit register for signal <SigGenCtrOvf_4T>.
+    Found 1-bit register for signal <SigGenCtrOvf_5T>.
+    Found 1-bit register for signal <SigGenCtrOvf_6T>.
+    Found 1-bit register for signal <SigGenCtrOvf_7T>.
+    Found 1-bit register for signal <SigGenCtrOvf_8T>.
+    Found 1-bit register for signal <SW0_Buf>.
+    Found 1-bit register for signal <SW1_Buf>.
+    Found 12-bit up counter for signal <UserInterfaceCounter>.
+    Found 1-bit register for signal <UserInterfaceCounterOverflow>.
+    Found 8-bit updown counter for signal <UserPhaseReg>.
+    Found 8-bit register for signal <WaveformCorrReg>.
+    Found 8-bit adder for signal <WaveformCorrReg_7$add0000> created at line 382.
+    Found 8-bit register for signal <WaveformReg>.
+    Found 2-bit updown counter for signal <WaveformTypeReg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   6 Counter(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <SinGenerator6> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 128x7-bit ROM                                         : 1
+ 16x3-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 8-bit adder                                           : 4
+# Counters                                             : 6
+ 12-bit up counter                                     : 1
+ 2-bit updown counter                                  : 1
+ 4-bit updown counter                                  : 1
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 35
+ 1-bit register                                        : 27
+ 8-bit register                                        : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 128x7-bit ROM                                         : 1
+ 16x3-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 8-bit adder                                           : 3
+# Counters                                             : 6
+ 12-bit up counter                                     : 1
+ 2-bit updown counter                                  : 1
+ 4-bit updown counter                                  : 1
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SinGenerator6> ...
+  implementation constraint: INIT=r	 : RefPhaseCounter_7
+  implementation constraint: INIT=r	 : RefPhaseCounter_0
+  implementation constraint: INIT=r	 : RefPhaseCounter_1
+  implementation constraint: INIT=r	 : RefPhaseCounter_2
+  implementation constraint: INIT=r	 : RefPhaseCounter_3
+  implementation constraint: INIT=r	 : RefPhaseCounter_4
+  implementation constraint: INIT=r	 : RefPhaseCounter_5
+  implementation constraint: INIT=r	 : RefPhaseCounter_6
+  implementation constraint: INIT=r	 : UserInterfaceCounter_11
+  implementation constraint: INIT=r	 : UserInterfaceCounter_10
+  implementation constraint: INIT=r	 : UserInterfaceCounter_9
+  implementation constraint: INIT=r	 : UserInterfaceCounter_8
+  implementation constraint: INIT=r	 : UserInterfaceCounter_7
+  implementation constraint: INIT=r	 : UserInterfaceCounter_6
+  implementation constraint: INIT=r	 : UserInterfaceCounter_5
+  implementation constraint: INIT=r	 : UserInterfaceCounter_4
+  implementation constraint: INIT=r	 : UserInterfaceCounter_3
+  implementation constraint: INIT=r	 : UserInterfaceCounter_2
+  implementation constraint: INIT=r	 : UserInterfaceCounter_1
+  implementation constraint: INIT=r	 : UserInterfaceCounter_0
+  implementation constraint: INIT=r	 : SigGenCounter_5
+  implementation constraint: INIT=r	 : SigGenCounter_0
+  implementation constraint: INIT=r	 : SigGenCounter_1
+  implementation constraint: INIT=r	 : SigGenCounter_2
+  implementation constraint: INIT=r	 : SigGenCounter_3
+  implementation constraint: INIT=r	 : SigGenCounter_4
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_7
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_0
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_1
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_2
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_3
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_4
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_5
+  implementation constraint: INIT=r	 : ButtonTimeOutCounter_6
+  implementation constraint: INIT=r	 : UserPhaseReg_7
+  implementation constraint: INIT=r	 : UserPhaseReg_6
+  implementation constraint: INIT=r	 : UserPhaseReg_5
+  implementation constraint: INIT=r	 : UserPhaseReg_4
+  implementation constraint: INIT=r	 : UserPhaseReg_3
+  implementation constraint: INIT=r	 : UserPhaseReg_2
+  implementation constraint: INIT=r	 : UserPhaseReg_1
+  implementation constraint: INIT=r	 : UserPhaseReg_0
+  implementation constraint: INIT=r	 : FrequencyNumberReg_3
+  implementation constraint: INIT=r	 : FrequencyNumberReg_2
+  implementation constraint: INIT=r	 : FrequencyNumberReg_1
+  implementation constraint: INIT=r	 : FrequencyNumberReg_0
+  implementation constraint: INIT=r	 : WaveformTypeReg_1
+  implementation constraint: INIT=r	 : WaveformTypeReg_0
+
+Optimizing unit <HSineTable> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SinGenerator6.ngr
+Top Level Output File Name         : SinGenerator6
+Output Format                      : NGC
+Optimization Goal                  : Area
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 53
+
+Cell Usage :
+# BELS                             : 1223
+#      AND2                        : 464
+#      AND3                        : 38
+#      AND4                        : 1
+#      GND                         : 1
+#      INV                         : 381
+#      OR2                         : 271
+#      OR3                         : 2
+#      VCC                         : 1
+#      XOR2                        : 64
+# FlipFlops/Latches                : 131
+#      FD                          : 41
+#      FDCE                        : 90
+# IO Buffers                       : 53
+#      IBUF                        : 5
+#      OBUF                        : 48
+=========================================================================
+
+
+Total REAL time to Xst completion: 54.00 secs
+Total CPU time to Xst completion: 53.83 secs
+ 
+--> 
+
+Total memory usage is 152244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  120 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

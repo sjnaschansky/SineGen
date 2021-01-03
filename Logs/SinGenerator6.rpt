@@ -1,0 +1,2734 @@
+ 
+cpldfit:  version O.87xd                            Xilinx Inc.
+                                  Fitter Report
+Design Name: SinGenerator6                       Date: 12-30-2018,  7:25AM
+Device Used: XC2C256-7-TQ144
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+188/256 ( 73%) 525 /896  ( 59%) 336 /640  ( 52%) 149/256 ( 58%) 53 /118 ( 45%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1      16/16*    30/40    38/56     4/ 6    0/1      0/1      0/1      0/1
+FB2      16/16*    22/40    21/56     8/ 8*   0/1      0/1      0/1      0/1
+FB3      16/16*    38/40*   54/56     4/ 6    0/1      0/1      0/1      0/1
+FB4      16/16*    26/40    34/56     0/ 8    0/1      0/1      0/1      0/1
+FB5      11/16     29/40    56/56*    0/ 5    0/1      0/1      0/1      0/1
+FB6      16/16*    15/40    25/56     0/ 8    0/1      0/1      0/1      0/1
+FB7       8/16     15/40    56/56*    0/ 8    0/1      0/1      0/1      0/1
+FB8       6/16     22/40    56/56*    0/ 8    0/1      0/1      0/1      0/1
+FB9      16/16*    23/40    24/56     8/ 8*   0/1      0/1      0/1      0/1
+FB10     16/16*    11/40    19/56     4/ 9    0/1      0/1      0/1      0/1
+FB11     16/16*    22/40    24/56     4/ 8    0/1      0/1      0/1      0/1
+FB12     16/16*    26/40    27/56     4/ 6    0/1      0/1      0/1      0/1
+FB13      7/16     11/40    25/56     0/ 8    0/1      0/1      0/1      0/1
+FB14      5/16     27/40    15/56     5/ 8    0/1      0/1      0/1      0/1
+FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
+FB16      7/16     19/40    51/56     7/ 7*   0/1      0/1      0/1      0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total   188/256   336/640  525/896   48/118   0/16     0/16     0/16     0/16
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+1/3         0/1         0/4         0/1
+
+Signal 'Clk' mapped onto global clock net GCK2.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    4           4    |  I/O              :    46    108
+Output        :   48          48    |  GCK/IO           :     1      3
+Bidirectional :    0           0    |  GTS/IO           :     4      4
+GCK           :    1           1    |  GSR/IO           :     1      1
+GTS           :    0           0    |  CDR/IO           :     0      1
+GSR           :    0           0    |  DGE/IO           :     1      1
+                 ----        ----
+        Total     53          53
+
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'SinGenerator6.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 48 Outputs **
+
+Signal                        Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                          Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+DAC34_nLE_R                   1     2     2    FB1_4   142   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC34_nLE_R_Copy              1     2     2    FB1_6   140   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC3_Data_R                   1     1     2    FB1_12  139   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC3_Data_R_Copy              1     1     2    FB1_13  138   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC12_Clk_Copy                1     1     2    FB2_1   2     GTS/I/O   O       LVCMOS33           SLOW         
+DAC12_Clk                     1     1     2    FB2_3   3     GTS/I/O   O       LVCMOS33           SLOW         
+DAC2_Data_R_Copy              8     14    2    FB2_4   4     I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC2_Data_R                   8     14    2    FB2_5   5     GTS/I/O   O       LVCMOS33           SLOW DFF     RESET
+DAC1_Data_R_Copy              1     1     2    FB2_12  6     GTS/I/O   O       LVCMOS33           SLOW DFF     RESET
+DAC1_Data_R                   1     1     2    FB2_13  7     I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC12_nLE_R_Copy              1     2     2    FB2_14  9     I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC12_nLE_R                   1     2     2    FB2_15  10    I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC4_Data_R                   8     14    2    FB3_1   136   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC4_Data_R_Copy              8     14    2    FB3_2   135   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC34_Clk                     1     1     2    FB3_3   134   I/O       O       LVCMOS33           SLOW         
+DAC34_Clk_Copy                1     1     2    FB3_5   133   I/O       O       LVCMOS33           SLOW         
+DAC56_Clk_Copy                1     1     2    FB9_1   112   I/O       O       LVCMOS33           SLOW         
+DAC56_Clk                     1     1     2    FB9_2   113   I/O       O       LVCMOS33           SLOW         
+DAC6_Data_R_Copy              8     14    2    FB9_4   114   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC6_Data_R                   8     14    2    FB9_6   115   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC5_Data_R_Copy              1     1     2    FB9_12  116   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC5_Data_R                   1     1     2    FB9_13  117   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC56_nLE_R_Copy              1     2     2    FB9_14  118   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC56_nLE_R                   1     2     2    FB9_15  119   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC78_nLE_R                   1     2     2    FB10_6  104   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC78_nLE_R_Copy              1     2     2    FB10_12 103   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC7_Data_R                   1     1     2    FB10_14 102   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC7_Data_R_Copy              1     1     2    FB10_16 101   I/O       O       LVCMOS33           SLOW DFF     RESET
+Digit0                        1     2     2    FB11_13 126   I/O       O       LVCMOS33           SLOW         
+Digit1                        1     2     2    FB11_14 128   I/O       O       LVCMOS33           SLOW         
+Digit2                        1     2     2    FB11_15 129   I/O       O       LVCMOS33           SLOW         
+Digit3                        1     2     2    FB11_16 130   I/O       O       LVCMOS33           SLOW         
+DAC8_Data_R                   8     14    2    FB12_2  100   I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC8_Data_R_Copy              8     14    2    FB12_11 98    I/O       O       LVCMOS33           SLOW DFF     RESET
+DAC78_Clk                     1     1     2    FB12_12 97    I/O       O       LVCMOS33           SLOW         
+DAC78_Clk_Copy                1     1     2    FB12_13 96    I/O       O       LVCMOS33           SLOW         
+LD0                           1     11    1    FB14_4  69    I/O       O       LVCMOS33           SLOW TFF/S   SET
+LD1                           1     2     1    FB14_6  68    I/O       O       LVCMOS33           SLOW         
+LD2                           1     3     1    FB14_13 66    I/O       O       LVCMOS33           SLOW         
+LD3                           1     4     1    FB14_14 64    I/O       O       LVCMOS33           SLOW         
+
+Signal                        Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                          Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+CG                            11    17    1    FB14_16 61    I/O       O       LVCMOS33           SLOW         
+CC                            7     18    1    FB16_5  60    I/O       O       LVCMOS33           SLOW         
+DP                            0     0     1    FB16_6  59    I/O       O       LVCMOS33           SLOW         
+CD                            13    18    1    FB16_11 58    I/O       O       LVCMOS33           SLOW         
+CE                            10    18    1    FB16_12 57    I/O       O       LVCMOS33           SLOW         
+CA                            12    19    1    FB16_13 56    I/O       O       LVCMOS33           SLOW         
+CF                            12    18    1    FB16_15 54    I/O       O       LVCMOS33           SLOW         
+CB                            12    19    1    FB16_16 53    I/O       O       LVCMOS33           SLOW         
+
+** 140 Buried Nodes **
+
+Signal                        Total Total Loc     Reg     Reg Init
+Name                          Pts   Inps          Use     State
+FrequencyNumberReg<1>         2     10    FB1_1   TFF     RESET
+FrequencyNumberReg<3>         2     12    FB1_2   TFF     RESET
+BTN0_Buf                      9     15    FB1_3   DEFF    RESET
+FrequencyNumberReg<2>         2     11    FB1_5   TFF     RESET
+N_PZ_926                      1     3     FB1_7           
+SigGenCounter<2>              3     8     FB1_8   TFF     RESET
+SigGenCounter<0>              1     8     FB1_9   TFF     RESET
+SigGenCounter<3>              4     9     FB1_10  DFF     RESET
+SigGenCounter<4>              5     9     FB1_11  DFF     RESET
+UserPhaseReg<1>               2     10    FB1_14  TFF     RESET
+SigGenCtrOvf_1T               4     9     FB1_15  DFF     RESET
+SigGenCounter<5>              3     6     FB1_16  TFF     RESET
+RefPhaseCounter<7>            1     6     FB2_2   TFF     RESET
+RefPhaseCounter<6>            1     5     FB2_6   TFF     RESET
+RefPhaseCounter<5>            1     4     FB2_7   TFF     RESET
+RefPhaseCounter<4>            1     3     FB2_8   TFF     RESET
+RefPhaseCounter<3>            1     2     FB2_9   TFF     RESET
+RefPhaseCounter<2>            1     1     FB2_10  TFF     RESET
+UserInterfaceCounter<0>       0     0     FB2_11  TFF     RESET
+SigGenCounter<1>              1     1     FB2_16  TFF     RESET
+N_PZ_775                      3     4     FB3_4           
+N_PZ_773                      6     6     FB3_6           
+PhaseReg<5>                   11    10    FB3_7   TFF     RESET
+PhaseReg<4>                   5     8     FB3_8   TFF     RESET
+PhaseReg<1>                   5     9     FB3_9   TFF     RESET
+PhaseReg<0>                   3     7     FB3_10  TFF     RESET
+N_PZ_800                      4     6     FB3_11          
+RefPhaseCounter<1>            2     5     FB3_12  TFF     RESET
+RefPhaseCounter<0>            1     3     FB3_13  TFF     RESET
+N_PZ_888                      1     2     FB3_14          
+SigGenCtrOvf_2T               1     1     FB3_15  DFF     RESET
+N_PZ_1044                     2     5     FB3_16          
+ButtonTimeOutCounter<4>       3     4     FB4_1   DFF     RESET
+ButtonTimeOutCounter<5>       3     5     FB4_2   TFF     RESET
+N_PZ_961                      2     10    FB4_3           
+N_PZ_1023                     3     14    FB4_4           
+ButtonTimeOutCounter<6>       3     6     FB4_5   TFF     RESET
+ButtonTimeOutCounter<7>       3     7     FB4_6   TFF     RESET
+UserPhaseReg<0>               1     8     FB4_7   TFF     RESET
+FrequencyNumberReg<0>         1     8     FB4_8   TFF     RESET
+
+Signal                        Total Total Loc     Reg     Reg Init
+Name                          Pts   Inps          Use     State
+UserPhaseReg<2>               2     11    FB4_9   TFF     RESET
+UserPhaseReg<3>               2     12    FB4_10  TFF     RESET
+UserPhaseReg<4>               2     14    FB4_11  TFF     RESET
+WaveformTypeReg<0>            1     7     FB4_12  TFF     RESET
+UserPhaseReg<5>               2     14    FB4_13  TFF     RESET
+WaveformTypeReg<1>            2     9     FB4_14  TFF     RESET
+UserPhaseReg<6>               2     15    FB4_15  TFF     RESET
+UserPhaseReg<7>               2     16    FB4_16  TFF     RESET
+Buffer_45<0>                  2     2     FB5_1   DEFF    RESET
+Buffer_0<0>                   2     2     FB5_3   DEFF    RESET
+WaveformReg<7>                1     1     FB5_7   DFF     RESET
+SigGenCtrOvf_6T               1     1     FB5_8   DFF     RESET
+SigGenCtrOvf_5T               1     1     FB5_9   DFF     RESET
+WaveformReg<6>                4     7     FB5_10  DFF     RESET
+WaveformReg<4>                11    12    FB5_11  DFF     RESET
+PhaseReg<3>                   8     10    FB5_12  TFF     RESET
+PhaseReg<2>                   4     8     FB5_13  TFF     RESET
+PhaseReg<6>                   10    12    FB5_15  TFF     RESET
+PhaseReg<7>                   16    14    FB5_16  TFF     RESET
+Buffer_90<1>                  2     2     FB6_1   DEFF    RESET
+Buffer_180<1>                 2     2     FB6_2   DEFF    RESET
+SigGenCtrOvf_4T               1     1     FB6_3   DFF     RESET
+Buffer_Usr<0>                 2     2     FB6_4   DEFF    RESET
+N_PZ_887                      1     2     FB6_5           
+SigGenCtrOvf_3T               1     1     FB6_6   DFF     RESET
+N_PZ_890                      1     3     FB6_7           
+ButtonTimeOutCounter<3>       4     6     FB6_8   DFF     RESET
+ButtonTimeOutCounter<2>       3     4     FB6_9   DFF     RESET
+ButtonTimeOutCounter<1>       2     4     FB6_10  TFF     RESET
+ButtonTimeOutCounter<0>       2     3     FB6_11  DFF     RESET
+SW0_Buf                       2     3     FB6_12  DEFF    RESET
+SigGenCtrOvf_8T               1     1     FB6_13  DFF     RESET
+Buffer_180<0>                 2     2     FB6_14  DEFF    RESET
+Buffer_90<0>                  2     2     FB6_15  DEFF    RESET
+SigGenCtrOvf_7T               1     1     FB6_16  DFF     RESET
+UserInterfaceCounter<2>       1     2     FB7_1   TFF     RESET
+UserInterfaceCounter<1>       1     1     FB7_2   TFF     RESET
+N_PZ_700                      2     2     FB7_3           
+N_PZ_942                      2     3     FB7_4           
+N_PZ_921                      2     3     FB7_7           
+
+Signal                        Total Total Loc     Reg     Reg Init
+Name                          Pts   Inps          Use     State
+WaveformReg<5>                9     9     FB7_8   DFF     RESET
+WaveformReg<3>                17    13    FB7_9   DFF     RESET
+WaveformReg<1>                22    13    FB7_10  DFF     RESET
+N_PZ_920                      1     3     FB8_8           
+WaveformCorrReg<3>            6     10    FB8_9   DFF     RESET
+WaveformCorrReg<2>            5     8     FB8_10  DFF     RESET
+WaveformCorrReg<0>            3     4     FB8_14  DFF     RESET
+WaveformReg<2>                24    9     FB8_15  DFF     RESET
+WaveformReg<0>                19    13    FB8_16  DFF     RESET
+Buffer_90<2>                  2     2     FB9_3   DEFF    RESET
+Buffer_180<2>                 2     2     FB9_5   DEFF    RESET
+Buffer_Usr<2>                 2     2     FB9_7   DEFF    RESET
+Buffer_45<2>                  2     2     FB9_8   DEFF    RESET
+Buffer_0<2>                   2     2     FB9_9   DEFF    RESET
+Buffer_Usr<1>                 2     2     FB9_10  DEFF    RESET
+Buffer_45<1>                  2     2     FB9_11  DEFF    RESET
+Buffer_0<1>                   2     2     FB9_16  DEFF    RESET
+Buffer_180<5>                 2     2     FB10_1  DEFF    RESET
+Buffer_0<5>                   2     2     FB10_2  DEFF    RESET
+Buffer_Usr<4>                 2     2     FB10_3  DEFF    RESET
+Buffer_90<4>                  2     2     FB10_4  DEFF    RESET
+Buffer_45<4>                  2     2     FB10_5  DEFF    RESET
+Buffer_180<4>                 2     2     FB10_7  DEFF    RESET
+Buffer_0<4>                   2     2     FB10_8  DEFF    RESET
+Buffer_Usr<3>                 2     2     FB10_9  DEFF    RESET
+Buffer_90<3>                  2     2     FB10_10 DEFF    RESET
+Buffer_45<3>                  2     2     FB10_11 DEFF    RESET
+Buffer_180<3>                 2     2     FB10_13 DEFF    RESET
+Buffer_0<3>                   2     2     FB10_15 DEFF    RESET
+UserInterfaceCounter<4>       1     4     FB11_1  TFF     RESET
+UserInterfaceCounter<5>       1     5     FB11_2  TFF     RESET
+UserInterfaceCounter<6>       1     6     FB11_3  TFF     RESET
+UserInterfaceCounter<7>       1     7     FB11_4  TFF     RESET
+Buffer_180<6>                 2     2     FB11_5  DEFF    RESET
+Buffer_0<6>                   2     2     FB11_6  DEFF    RESET
+UserInterfaceCounter<8>       1     8     FB11_7  TFF     RESET
+UserInterfaceCounter<9>       1     9     FB11_8  TFF     RESET
+UserInterfaceCounter<10>      1     10    FB11_9  TFF     RESET
+UserInterfaceCounterOverflow  1     12    FB11_10 DFF     RESET
+SW1_Buf                       8     8     FB11_11 DEFF    RESET
+
+Signal                        Total Total Loc     Reg     Reg Init
+Name                          Pts   Inps          Use     State
+UserInterfaceCounter<3>       1     3     FB11_12 TFF     RESET
+Buffer_90<6>                  2     2     FB12_1  DEFF    RESET
+Buffer_45<6>                  2     2     FB12_3  DEFF    RESET
+Buffer_Usr<5>                 2     2     FB12_4  DEFF    RESET
+Buffer_90<5>                  2     2     FB12_5  DEFF    RESET
+Buffer_45<5>                  2     2     FB12_6  DEFF    RESET
+Buffer_Usr<7>                 2     2     FB12_7  DEFF    RESET
+Buffer_90<7>                  2     2     FB12_8  DEFF    RESET
+Buffer_45<7>                  2     2     FB12_9  DEFF    RESET
+Buffer_180<7>                 2     2     FB12_10 DEFF    RESET
+Buffer_Usr<6>                 2     2     FB12_14 DEFF    RESET
+BTN1_Buf                      3     3     FB12_15 DEFF    RESET
+Buffer_0<7>                   2     2     FB12_16 DEFF    RESET
+N_PZ_995                      2     3     FB13_7          
+N_PZ_712                      2     4     FB13_8          
+WaveformCorrReg<1>            3     5     FB13_9  DFF     RESET
+WaveformCorrReg<7>            3     8     FB13_10 DFF     RESET
+WaveformCorrReg<4>            5     8     FB13_11 DFF     RESET
+WaveformCorrReg<5>            6     9     FB13_15 DFF     RESET
+WaveformCorrReg<6>            7     10    FB13_16 DFF     RESET
+
+** 5 Inputs **
+
+Signal                        Bank Loc     Pin   Pin       Pin     I/O      I/O
+Name                                       No.   Type      Use     STD      Style
+BTN0                          2    FB1_3   143   GSR/I/O   I       LVCMOS33 S/PU
+Clk                           1    FB6_4   38    GCK/I/O   GCK/I   LVCMOS33 S
+SW0                           1    FB6_12  39    DGE/I/O   I       LVCMOS33 S/PU
+SW1                           2    FB11_11 124   I/O       I       LVCMOS33 S/PU
+BTN1                          2    FB12_15 94    I/O       I       LVCMOS33 S/PU
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+              VRF - Vref
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               30/10
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   38/18
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+FrequencyNumberReg<1>         2     FB1_1        (b)     (b)               
+FrequencyNumberReg<3>         2     FB1_2        (b)     (b)               
+BTN0_Buf                      9     FB1_3   143  GSR/I/O I                 
+DAC34_nLE_R                   1     FB1_4   142  I/O     O                 
+FrequencyNumberReg<2>         2     FB1_5        (b)     (b)               
+DAC34_nLE_R_Copy              1     FB1_6   140  I/O     O                 
+N_PZ_926                      1     FB1_7        (b)     (b)               
+SigGenCounter<2>              3     FB1_8        (b)     (b)               
+SigGenCounter<0>              1     FB1_9        (b)     (b)               
+SigGenCounter<3>              4     FB1_10       (b)     (b)               
+SigGenCounter<4>              5     FB1_11       (b)     (b)               
+DAC3_Data_R                   1     FB1_12  139  I/O     O                 
+DAC3_Data_R_Copy              1     FB1_13  138  I/O     O                 
+UserPhaseReg<1>               2     FB1_14  137  I/O     (b)               
+SigGenCtrOvf_1T               4     FB1_15       (b)     (b)               
+SigGenCounter<5>              3     FB1_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN0_Buf          11: Buffer_0<7>              21: SW0_Buf 
+  2: BTN0_Buf.COMB     12: ButtonTimeOutCounter<4>  22: SW1_Buf 
+  3: BTN1_Buf          13: ButtonTimeOutCounter<5>  23: SigGenCounter<0> 
+  4: Buffer_0<0>       14: ButtonTimeOutCounter<6>  24: SigGenCounter<1> 
+  5: Buffer_0<1>       15: ButtonTimeOutCounter<7>  25: SigGenCounter<2> 
+  6: Buffer_0<2>       16: FrequencyNumberReg<0>    26: SigGenCounter<3> 
+  7: Buffer_0<3>       17: FrequencyNumberReg<1>    27: SigGenCounter<4> 
+  8: Buffer_0<4>       18: FrequencyNumberReg<2>    28: SigGenCounter<5> 
+  9: Buffer_0<5>       19: N_PZ_890                 29: UserInterfaceCounterOverflow 
+ 10: Buffer_0<6>       20: N_PZ_926                 30: UserPhaseReg<0> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+FrequencyNumberReg<1> 
+                  X.X........XXXXX..X.XX.................. 10      
+FrequencyNumberReg<3> 
+                  X.X........XXXXXXXX.XX.................. 12      
+BTN0_Buf          ...XXXXXXXX...........XXXXXXX........... 15      
+DAC34_nLE_R       ..........................XX............ 2       
+FrequencyNumberReg<2> 
+                  X.X........XXXXXX.X.XX.................. 11      
+DAC34_nLE_R_Copy  ..........................XX............ 2       
+N_PZ_926          ......................XXX............... 3       
+SigGenCounter<2>  ...............XX.....XXXXXX............ 8       
+SigGenCounter<0>  ...............XX.....XXXXXX............ 8       
+SigGenCounter<3>  ...............XX..X..XXXXXX............ 9       
+SigGenCounter<4>  ...............XX..X..XXXXXX............ 9       
+DAC3_Data_R       .X...................................... 1       
+DAC3_Data_R_Copy  .X...................................... 1       
+UserPhaseReg<1>   X.X........XXXX...X.XX.......X.......... 10      
+SigGenCtrOvf_1T   ...............XX..X..XXXXXX............ 9       
+SigGenCounter<5>  ...............XX..X.....XXX............ 6       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB2  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               22/18
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   21/35
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DAC12_Clk_Copy                1     FB2_1   2    GTS/I/O O                 
+RefPhaseCounter<7>            1     FB2_2        (b)     (b)               
+DAC12_Clk                     1     FB2_3   3    GTS/I/O O                 
+DAC2_Data_R_Copy              8     FB2_4   4    I/O     O                 
+DAC2_Data_R                   8     FB2_5   5    GTS/I/O O                 
+RefPhaseCounter<6>            1     FB2_6        (b)     (b)               
+RefPhaseCounter<5>            1     FB2_7        (b)     (b)               
+RefPhaseCounter<4>            1     FB2_8        (b)     (b)               
+RefPhaseCounter<3>            1     FB2_9        (b)     (b)               
+RefPhaseCounter<2>            1     FB2_10       (b)     (b)               
+UserInterfaceCounter<0>       0     FB2_11       (b)     (b)               
+DAC1_Data_R_Copy              1     FB2_12  6    GTS/I/O O                 
+DAC1_Data_R                   1     FB2_13  7    I/O     O                 
+DAC12_nLE_R_Copy              1     FB2_14  9    I/O     O                 
+DAC12_nLE_R                   1     FB2_15  10   I/O     O                 
+SigGenCounter<1>              1     FB2_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN0_Buf.COMB      9: Buffer_45<7>        16: RefPhaseCounter<6> 
+  2: Buffer_45<0>      10: Clk                 17: SigGenCounter<0> 
+  3: Buffer_45<1>      11: N_PZ_800            18: SigGenCounter<1> 
+  4: Buffer_45<2>      12: RefPhaseCounter<2>  19: SigGenCounter<2> 
+  5: Buffer_45<3>      13: RefPhaseCounter<3>  20: SigGenCounter<3> 
+  6: Buffer_45<4>      14: RefPhaseCounter<4>  21: SigGenCounter<4> 
+  7: Buffer_45<5>      15: RefPhaseCounter<5>  22: SigGenCounter<5> 
+  8: Buffer_45<6>     
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DAC12_Clk_Copy    .........X.............................. 1       
+RefPhaseCounter<7> 
+                  ..........XXXXXX........................ 6       
+DAC12_Clk         .........X.............................. 1       
+DAC2_Data_R_Copy  .XXXXXXXX.......XXXXXX.................. 14      
+DAC2_Data_R       .XXXXXXXX.......XXXXXX.................. 14      
+RefPhaseCounter<6> 
+                  ..........XXXXX......................... 5       
+RefPhaseCounter<5> 
+                  ..........XXXX.......................... 4       
+RefPhaseCounter<4> 
+                  ..........XXX........................... 3       
+RefPhaseCounter<3> 
+                  ..........XX............................ 2       
+RefPhaseCounter<2> 
+                  ..........X............................. 1       
+UserInterfaceCounter<0> 
+                  ........................................ 0       
+DAC1_Data_R_Copy  X....................................... 1       
+DAC1_Data_R       X....................................... 1       
+DAC12_nLE_R_Copy  ....................XX.................. 2       
+DAC12_nLE_R       ....................XX.................. 2       
+SigGenCounter<1>  ................X....................... 1       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB3  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   54/2
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DAC4_Data_R                   8     FB3_1   136  I/O     O                 
+DAC4_Data_R_Copy              8     FB3_2   135  I/O     O                 
+DAC34_Clk                     1     FB3_3   134  I/O     O                 
+N_PZ_775                      3     FB3_4        (b)     (b)               
+DAC34_Clk_Copy                1     FB3_5   133  I/O     O                 
+N_PZ_773                      6     FB3_6        (b)     (b)               
+PhaseReg<5>                   11    FB3_7        (b)     (b)               
+PhaseReg<4>                   5     FB3_8        (b)     (b)               
+PhaseReg<1>                   5     FB3_9        (b)     (b)               
+PhaseReg<0>                   3     FB3_10       (b)     (b)               
+N_PZ_800                      4     FB3_11       (b)     (b)               
+RefPhaseCounter<1>            2     FB3_12       (b)     (b)               
+RefPhaseCounter<0>            1     FB3_13       (b)     (b)               
+N_PZ_888                      1     FB3_14  132  I/O     (b)               
+SigGenCtrOvf_2T               1     FB3_15       (b)     (b)               
+N_PZ_1044                     2     FB3_16  131  I/O     (b)               
+
+Signals Used by Logic in Function Block
+  1: Buffer_90<0>           14: PhaseReg<0>         27: SigGenCounter<2> 
+  2: Buffer_90<1>           15: PhaseReg<1>         28: SigGenCounter<3> 
+  3: Buffer_90<2>           16: PhaseReg<4>         29: SigGenCounter<4> 
+  4: Buffer_90<3>           17: PhaseReg<5>         30: SigGenCounter<5> 
+  5: Buffer_90<4>           18: PhaseReg<6>         31: SigGenCtrOvf_1T 
+  6: Buffer_90<5>           19: RefPhaseCounter<0>  32: SigGenCtrOvf_4T 
+  7: Buffer_90<6>           20: RefPhaseCounter<1>  33: SigGenCtrOvf_5T 
+  8: Buffer_90<7>           21: RefPhaseCounter<4>  34: UserPhaseReg<0> 
+  9: Clk                    22: RefPhaseCounter<5>  35: UserPhaseReg<1> 
+ 10: FrequencyNumberReg<2>  23: SW1_Buf             36: UserPhaseReg<4> 
+ 11: FrequencyNumberReg<3>  24: SW1_Buf.COMB        37: UserPhaseReg<5> 
+ 12: N_PZ_887               25: SigGenCounter<0>    38: WaveformTypeReg<1> 
+ 13: N_PZ_888               26: SigGenCounter<1>   
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DAC4_Data_R       XXXXXXXX................XXXXXX.......... 14      
+DAC4_Data_R_Copy  XXXXXXXX................XXXXXX.......... 14      
+DAC34_Clk         ........X............................... 1       
+N_PZ_775          .............XX..................XX..... 4       
+DAC34_Clk_Copy    ........X............................... 1       
+N_PZ_773          ............X..XX......X...........XX... 6       
+PhaseReg<5>       ...........X...XX....X.X......XXX..XX... 10      
+PhaseReg<4>       ...........X...X....X..X......XXX..X.... 8       
+PhaseReg<1>       ...........X.XX....X..........XXXXX..... 9       
+PhaseReg<0>       ...........X.X....X...........XXXX...... 7       
+N_PZ_800          .........XX.......XX..X.......X......... 6       
+RefPhaseCounter<1> 
+                  .........XX.......X...X.......X......... 5       
+RefPhaseCounter<0> 
+                  .........X............X.......X......... 3       
+N_PZ_888          ...............XX....................... 2       
+SigGenCtrOvf_2T   ..............................X......... 1       
+N_PZ_1044         ............X..XXX...................X.. 5       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB4  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               26/14
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   34/22
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+ButtonTimeOutCounter<4>       3     FB4_1   11   I/O     (b)               
+ButtonTimeOutCounter<5>       3     FB4_2   12   I/O     (b)               
+N_PZ_961                      2     FB4_3   13   I/O     (b)               
+N_PZ_1023                     3     FB4_4   14   I/O     (b)               
+ButtonTimeOutCounter<6>       3     FB4_5   15   I/O     (b)               
+ButtonTimeOutCounter<7>       3     FB4_6   16   I/O     (b)               
+UserPhaseReg<0>               1     FB4_7        (b)     (b)               
+FrequencyNumberReg<0>         1     FB4_8        (b)     (b)               
+UserPhaseReg<2>               2     FB4_9        (b)     (b)               
+UserPhaseReg<3>               2     FB4_10       (b)     (b)               
+UserPhaseReg<4>               2     FB4_11       (b)     (b)               
+WaveformTypeReg<0>            1     FB4_12  17   I/O     (b)               
+UserPhaseReg<5>               2     FB4_13       (b)     (b)               
+WaveformTypeReg<1>            2     FB4_14  18   I/O     (b)               
+UserPhaseReg<6>               2     FB4_15       (b)     (b)               
+UserPhaseReg<7>               2     FB4_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN0_Buf                 10: FrequencyNumberReg<2>         19: UserPhaseReg<1> 
+  2: BTN1_Buf                 11: FrequencyNumberReg<3>         20: UserPhaseReg<2> 
+  3: BTN1_Buf.COMB            12: LD0                           21: UserPhaseReg<3> 
+  4: ButtonTimeOutCounter<4>  13: N_PZ_890                      22: UserPhaseReg<4> 
+  5: ButtonTimeOutCounter<5>  14: SW0_Buf                       23: UserPhaseReg<5> 
+  6: ButtonTimeOutCounter<6>  15: SW1_Buf                       24: UserPhaseReg<6> 
+  7: ButtonTimeOutCounter<7>  16: UserInterfaceCounter<10>      25: UserPhaseReg<7> 
+  8: FrequencyNumberReg<0>    17: UserInterfaceCounterOverflow  26: WaveformTypeReg<0> 
+  9: FrequencyNumberReg<1>    18: UserPhaseReg<0>              
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+ButtonTimeOutCounter<4> 
+                  ..XX........X...X....................... 4       
+ButtonTimeOutCounter<5> 
+                  ..XXX.......X...X....................... 5       
+N_PZ_961          .......XXXXX...X.....XXXX............... 10      
+N_PZ_1023         .......XXXXX...X.XXXXXXXX............... 14      
+ButtonTimeOutCounter<6> 
+                  ..XXXX......X...X....................... 6       
+ButtonTimeOutCounter<7> 
+                  ..XXXXX.....X...X....................... 7       
+UserPhaseReg<0>   ..XXXXX.....XXX......................... 8       
+FrequencyNumberReg<0> 
+                  ..XXXXX.....XXX......................... 8       
+UserPhaseReg<2>   XX.XXXX.....XXX..XX..................... 11      
+UserPhaseReg<3>   XX.XXXX.....XXX..XXX.................... 12      
+UserPhaseReg<4>   XXXXXXX.....XXX..XXXX................... 14      
+WaveformTypeReg<0> 
+                  ..XXXXX.....X.X......................... 7       
+UserPhaseReg<5>   XX.XXXX.....XXX..XXXXX.................. 14      
+WaveformTypeReg<1> 
+                  XX.XXXX.....X.X..........X.............. 9       
+UserPhaseReg<6>   XX.XXXX.....XXX..XXXXXX................. 15      
+UserPhaseReg<7>   XX.XXXX.....XXX..XXXXXXX................ 16      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB5  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               29/11
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+Buffer_45<0>                  2     FB5_1        (b)     (b)               
+(unused)                      0     FB5_2   33   I/O           
+Buffer_0<0>                   2     FB5_3        (b)     (b)               
+(unused)                      0     FB5_4   32   GCK/I/O       
+(unused)                      0     FB5_5   31   I/O           
+(unused)                      0     FB5_6   30   GCK/I/O       
+WaveformReg<7>                1     FB5_7        (b)     (b)               
+SigGenCtrOvf_6T               1     FB5_8        (b)     (b)               
+SigGenCtrOvf_5T               1     FB5_9        (b)     (b)               
+WaveformReg<6>                4     FB5_10       (b)     (b)               
+WaveformReg<4>                11    FB5_11       (b)     (b)               
+PhaseReg<3>                   8     FB5_12       (b)     (b)               
+PhaseReg<2>                   4     FB5_13       (b)     (b)               
+(unused)                      0     FB5_14  28   I/O           
+PhaseReg<6>                   10    FB5_15       (b)     (b)               
+PhaseReg<7>                   16    FB5_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: N_PZ_1044         11: PhaseReg<3>         21: SigGenCtrOvf_1T 
+  2: N_PZ_700          12: PhaseReg<4>         22: SigGenCtrOvf_4T 
+  3: N_PZ_773          13: PhaseReg<5>         23: SigGenCtrOvf_5T 
+  4: N_PZ_775          14: PhaseReg<6>         24: UserPhaseReg<2> 
+  5: N_PZ_887          15: PhaseReg<7>         25: UserPhaseReg<3> 
+  6: N_PZ_888          16: RefPhaseCounter<2>  26: UserPhaseReg<6> 
+  7: N_PZ_921          17: RefPhaseCounter<3>  27: UserPhaseReg<7> 
+  8: N_PZ_942          18: RefPhaseCounter<6>  28: WaveformCorrReg<0> 
+  9: PhaseReg<1>       19: RefPhaseCounter<7>  29: WaveformTypeReg<1> 
+ 10: PhaseReg<2>       20: SW1_Buf.COMB       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+Buffer_45<0>      ......................X....X............ 2       
+Buffer_0<0>       .....................X.....X............ 2       
+WaveformReg<7>    ..............X......................... 1       
+SigGenCtrOvf_6T   ......................X................. 1       
+SigGenCtrOvf_5T   .....................X.................. 1       
+WaveformReg<6>    X.....XX..X.XX..............X........... 7       
+WaveformReg<4>    XX...XXXXXXXXX..............X........... 12      
+PhaseReg<3>       ...XX....XX.....X...XXXXX............... 10      
+PhaseReg<2>       ...XX....X.....X....XXXX................ 8       
+PhaseReg<6>       ..X.XX.....XXX...X.XXXX..X.............. 12      
+PhaseReg<7>       ..X.XX.....XXXX...XXXXX..XX............. 14      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB6  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               15/25
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   25/31
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+Buffer_90<1>                  2     FB6_1   34   I/O     (b)               
+Buffer_180<1>                 2     FB6_2   35   CDR/I/O (b)               
+SigGenCtrOvf_4T               1     FB6_3        (b)     (b)               
+Buffer_Usr<0>                 2     FB6_4   38   GCK/I/O GCK/I             
+N_PZ_887                      1     FB6_5        (b)     (b)               
+SigGenCtrOvf_3T               1     FB6_6        (b)     (b)               
+N_PZ_890                      1     FB6_7        (b)     (b)               
+ButtonTimeOutCounter<3>       4     FB6_8        (b)     (b)               
+ButtonTimeOutCounter<2>       3     FB6_9        (b)     (b)               
+ButtonTimeOutCounter<1>       2     FB6_10       (b)     (b)               
+ButtonTimeOutCounter<0>       2     FB6_11       (b)     (b)               
+SW0_Buf                       2     FB6_12  39   DGE/I/O I                 
+SigGenCtrOvf_8T               1     FB6_13  40   I/O     (b)               
+Buffer_180<0>                 2     FB6_14  41   I/O     (b)               
+Buffer_90<0>                  2     FB6_15  42   I/O     (b)               
+SigGenCtrOvf_7T               1     FB6_16  43   I/O     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN1_Buf.COMB             6: N_PZ_890          11: SigGenCtrOvf_7T 
+  2: ButtonTimeOutCounter<0>   7: SW0_Buf.COMB      12: SigGenCtrOvf_8T 
+  3: ButtonTimeOutCounter<1>   8: SigGenCtrOvf_2T   13: UserInterfaceCounterOverflow 
+  4: ButtonTimeOutCounter<2>   9: SigGenCtrOvf_3T   14: WaveformCorrReg<0> 
+  5: ButtonTimeOutCounter<3>  10: SigGenCtrOvf_6T   15: WaveformCorrReg<1> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+Buffer_90<1>      .........X....X......................... 2       
+Buffer_180<1>     ..........X...X......................... 2       
+SigGenCtrOvf_4T   ........X............................... 1       
+Buffer_Usr<0>     ...........X.X.......................... 2       
+N_PZ_887          .......XX............................... 2       
+SigGenCtrOvf_3T   .......X................................ 1       
+N_PZ_890          ...XX.X................................. 3       
+ButtonTimeOutCounter<3> 
+                  X..XXXX.....X........................... 6       
+ButtonTimeOutCounter<2> 
+                  X..X..X.....X........................... 4       
+ButtonTimeOutCounter<1> 
+                  XXX.........X........................... 4       
+ButtonTimeOutCounter<0> 
+                  XX..........X........................... 3       
+SW0_Buf           .XX.........X........................... 3       
+SigGenCtrOvf_8T   ..........X............................. 1       
+Buffer_180<0>     ..........X..X.......................... 2       
+Buffer_90<0>      .........X...X.......................... 2       
+SigGenCtrOvf_7T   .........X.............................. 1       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB7  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               15/25
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+UserInterfaceCounter<2>       1     FB7_1        (b)     (b)               
+UserInterfaceCounter<1>       1     FB7_2        (b)     (b)               
+N_PZ_700                      2     FB7_3        (b)     (b)               
+N_PZ_942                      2     FB7_4        (b)     (b)               
+(unused)                      0     FB7_5   26   I/O           
+(unused)                      0     FB7_6   25   I/O           
+N_PZ_921                      2     FB7_7        (b)     (b)               
+WaveformReg<5>                9     FB7_8        (b)     (b)               
+WaveformReg<3>                17    FB7_9        (b)     (b)               
+WaveformReg<1>                22    FB7_10       (b)     (b)               
+(unused)                      0     FB7_11  24   I/O           
+(unused)                      0     FB7_12  23   I/O           
+(unused)                      0     FB7_13  22   I/O           
+(unused)                      0     FB7_14  21   I/O           
+(unused)                      0     FB7_15  20   I/O           
+(unused)                      0     FB7_16  19   I/O           
+
+Signals Used by Logic in Function Block
+  1: N_PZ_1044          6: PhaseReg<0>       11: PhaseReg<5> 
+  2: N_PZ_700           7: PhaseReg<1>       12: PhaseReg<6> 
+  3: N_PZ_888           8: PhaseReg<2>       13: UserInterfaceCounter<0> 
+  4: N_PZ_921           9: PhaseReg<3>       14: UserInterfaceCounter<1> 
+  5: N_PZ_942          10: PhaseReg<4>       15: WaveformTypeReg<1> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+UserInterfaceCounter<2> 
+                  ............XX.......................... 2       
+UserInterfaceCounter<1> 
+                  ............X........................... 1       
+N_PZ_700          .......XX............................... 2       
+N_PZ_942          .....XXX................................ 3       
+N_PZ_921          .....XXX................................ 3       
+WaveformReg<5>    ..XXX.X.XXXX..X......................... 9       
+WaveformReg<3>    XXXXXXXXXXXX..X......................... 13      
+WaveformReg<1>    XXXXXXXXXXXX..X......................... 13      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB8  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               22/18
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB8_1   44   I/O           
+(unused)                      0     FB8_2   45   I/O           
+(unused)                      0     FB8_3   46   I/O           
+(unused)                      0     FB8_4        (b)           
+(unused)                      0     FB8_5   48   I/O           
+(unused)                      0     FB8_6   49   I/O           
+(unused)                      0     FB8_7        (b)           
+N_PZ_920                      1     FB8_8        (b)     (b)               
+WaveformCorrReg<3>            6     FB8_9        (b)     (b)               
+WaveformCorrReg<2>            5     FB8_10       (b)     (b)               
+(unused)                      0     FB8_11  50   I/O           
+(unused)                      0     FB8_12  51   I/O           
+(unused)                      0     FB8_13  52   I/O           
+WaveformCorrReg<0>            3     FB8_14       (b)     (b)               
+WaveformReg<2>                24    FB8_15       (b)     (b)               
+WaveformReg<0>                19    FB8_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: N_PZ_1044          9: PhaseReg<0>       16: WaveformReg<0> 
+  2: N_PZ_700          10: PhaseReg<1>       17: WaveformReg<1> 
+  3: N_PZ_712          11: PhaseReg<2>       18: WaveformReg<2> 
+  4: N_PZ_888          12: PhaseReg<3>       19: WaveformReg<3> 
+  5: N_PZ_920          13: PhaseReg<4>       20: WaveformReg<7> 
+  6: N_PZ_921          14: PhaseReg<5>       21: WaveformTypeReg<0> 
+  7: N_PZ_942          15: PhaseReg<6>       22: WaveformTypeReg<1> 
+  8: N_PZ_995         
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+N_PZ_920          ................XXX..................... 3       
+WaveformCorrReg<3> 
+                  ..X.X..X.......XXXXXXX.................. 10      
+WaveformCorrReg<2> 
+                  ..X....X.......XXX.XXX.................. 8       
+WaveformCorrReg<0> 
+                  ...............X...XXX.................. 4       
+WaveformReg<2>    ...X....XXXXXXX......X.................. 9       
+WaveformReg<0>    XX.X.XX.XXXXXXX......X.................. 13      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB9  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               23/17
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   24/32
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DAC56_Clk_Copy                1     FB9_1   112  I/O     O                 
+DAC56_Clk                     1     FB9_2   113  I/O     O                 
+Buffer_90<2>                  2     FB9_3        (b)     (b)               
+DAC6_Data_R_Copy              8     FB9_4   114  I/O     O                 
+Buffer_180<2>                 2     FB9_5        (b)     (b)               
+DAC6_Data_R                   8     FB9_6   115  I/O     O                 
+Buffer_Usr<2>                 2     FB9_7        (b)     (b)               
+Buffer_45<2>                  2     FB9_8        (b)     (b)               
+Buffer_0<2>                   2     FB9_9        (b)     (b)               
+Buffer_Usr<1>                 2     FB9_10       (b)     (b)               
+Buffer_45<1>                  2     FB9_11       (b)     (b)               
+DAC5_Data_R_Copy              1     FB9_12  116  I/O     O                 
+DAC5_Data_R                   1     FB9_13  117  I/O     O                 
+DAC56_nLE_R_Copy              1     FB9_14  118  I/O     O                 
+DAC56_nLE_R                   1     FB9_15  119  I/O     O                 
+Buffer_0<1>                   2     FB9_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN0_Buf.COMB      9: Buffer_180<7>     17: SigGenCtrOvf_4T 
+  2: Buffer_180<0>     10: Clk               18: SigGenCtrOvf_5T 
+  3: Buffer_180<1>     11: SigGenCounter<0>  19: SigGenCtrOvf_6T 
+  4: Buffer_180<2>     12: SigGenCounter<1>  20: SigGenCtrOvf_7T 
+  5: Buffer_180<3>     13: SigGenCounter<2>  21: SigGenCtrOvf_8T 
+  6: Buffer_180<4>     14: SigGenCounter<3>  22: WaveformCorrReg<1> 
+  7: Buffer_180<5>     15: SigGenCounter<4>  23: WaveformCorrReg<2> 
+  8: Buffer_180<6>     16: SigGenCounter<5> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DAC56_Clk_Copy    .........X.............................. 1       
+DAC56_Clk         .........X.............................. 1       
+Buffer_90<2>      ..................X...X................. 2       
+DAC6_Data_R_Copy  .XXXXXXXX.XXXXXX........................ 14      
+Buffer_180<2>     ...................X..X................. 2       
+DAC6_Data_R       .XXXXXXXX.XXXXXX........................ 14      
+Buffer_Usr<2>     ....................X.X................. 2       
+Buffer_45<2>      .................X....X................. 2       
+Buffer_0<2>       ................X.....X................. 2       
+Buffer_Usr<1>     ....................XX.................. 2       
+Buffer_45<1>      .................X...X.................. 2       
+DAC5_Data_R_Copy  X....................................... 1       
+DAC5_Data_R       X....................................... 1       
+DAC56_nLE_R_Copy  ..............XX........................ 2       
+DAC56_nLE_R       ..............XX........................ 2       
+Buffer_0<1>       ................X....X.................. 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB10 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               11/29
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   19/37
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+Buffer_180<5>                 2     FB10_1  111  I/O     (b)               
+Buffer_0<5>                   2     FB10_2  110  I/O     (b)               
+Buffer_Usr<4>                 2     FB10_3  107  I/O     (b)               
+Buffer_90<4>                  2     FB10_4  106  I/O     (b)               
+Buffer_45<4>                  2     FB10_5  105  I/O     (b)               
+DAC78_nLE_R                   1     FB10_6  104  I/O     O                 
+Buffer_180<4>                 2     FB10_7       (b)     (b)               
+Buffer_0<4>                   2     FB10_8       (b)     (b)               
+Buffer_Usr<3>                 2     FB10_9       (b)     (b)               
+Buffer_90<3>                  2     FB10_10      (b)     (b)               
+Buffer_45<3>                  2     FB10_11      (b)     (b)               
+DAC78_nLE_R_Copy              1     FB10_12 103  I/O     O                 
+Buffer_180<3>                 2     FB10_13      (b)     (b)               
+DAC7_Data_R                   1     FB10_14 102  I/O     O                 
+Buffer_0<3>                   2     FB10_15      (b)     (b)               
+DAC7_Data_R_Copy              1     FB10_16 101  I/O     O                 
+
+Signals Used by Logic in Function Block
+  1: BTN0_Buf.COMB      5: SigGenCtrOvf_5T    9: WaveformCorrReg<3> 
+  2: SigGenCounter<4>   6: SigGenCtrOvf_6T   10: WaveformCorrReg<4> 
+  3: SigGenCounter<5>   7: SigGenCtrOvf_7T   11: WaveformCorrReg<5> 
+  4: SigGenCtrOvf_4T    8: SigGenCtrOvf_8T  
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+Buffer_180<5>     ......X...X............................. 2       
+Buffer_0<5>       ...X......X............................. 2       
+Buffer_Usr<4>     .......X.X.............................. 2       
+Buffer_90<4>      .....X...X.............................. 2       
+Buffer_45<4>      ....X....X.............................. 2       
+DAC78_nLE_R       .XX..................................... 2       
+Buffer_180<4>     ......X..X.............................. 2       
+Buffer_0<4>       ...X.....X.............................. 2       
+Buffer_Usr<3>     .......XX............................... 2       
+Buffer_90<3>      .....X..X............................... 2       
+Buffer_45<3>      ....X...X............................... 2       
+DAC78_nLE_R_Copy  .XX..................................... 2       
+Buffer_180<3>     ......X.X............................... 2       
+DAC7_Data_R       X....................................... 1       
+Buffer_0<3>       ...X....X............................... 2       
+DAC7_Data_R_Copy  X....................................... 1       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB11 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               22/18
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   24/32
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+UserInterfaceCounter<4>       1     FB11_1       (b)     (b)               
+UserInterfaceCounter<5>       1     FB11_2       (b)     (b)               
+UserInterfaceCounter<6>       1     FB11_3       (b)     (b)               
+UserInterfaceCounter<7>       1     FB11_4       (b)     (b)               
+Buffer_180<6>                 2     FB11_5  120  I/O     (b)               
+Buffer_0<6>                   2     FB11_6  121  I/O     (b)               
+UserInterfaceCounter<8>       1     FB11_7       (b)     (b)               
+UserInterfaceCounter<9>       1     FB11_8       (b)     (b)               
+UserInterfaceCounter<10>      1     FB11_9       (b)     (b)               
+UserInterfaceCounterOverflow  1     FB11_10      (b)     (b)               
+SW1_Buf                       8     FB11_11 124  I/O     I                 
+UserInterfaceCounter<3>       1     FB11_12 125  I/O     (b)               
+Digit0                        1     FB11_13 126  I/O     O                 
+Digit1                        1     FB11_14 128  I/O     O                 
+Digit2                        1     FB11_15 129  I/O     O                 
+Digit3                        1     FB11_16 130  I/O     O                 
+
+Signals Used by Logic in Function Block
+  1: LD0                       9: UserInterfaceCounter<10>  16: UserInterfaceCounter<7> 
+  2: N_PZ_700                 10: UserInterfaceCounter<1>   17: UserInterfaceCounter<8> 
+  3: N_PZ_775                 11: UserInterfaceCounter<2>   18: UserInterfaceCounter<9> 
+  4: N_PZ_887                 12: UserInterfaceCounter<3>   19: UserInterfaceCounterOverflow 
+  5: PhaseReg<3>              13: UserInterfaceCounter<4>   20: UserPhaseReg<2> 
+  6: SigGenCtrOvf_4T          14: UserInterfaceCounter<5>   21: UserPhaseReg<3> 
+  7: SigGenCtrOvf_7T          15: UserInterfaceCounter<6>   22: WaveformCorrReg<6> 
+  8: UserInterfaceCounter<0> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+UserInterfaceCounter<4> 
+                  .......X.XXX............................ 4       
+UserInterfaceCounter<5> 
+                  .......X.XXXX........................... 5       
+UserInterfaceCounter<6> 
+                  .......X.XXXXX.......................... 6       
+UserInterfaceCounter<7> 
+                  .......X.XXXXXX......................... 7       
+Buffer_180<6>     ......X..............X.................. 2       
+Buffer_0<6>       .....X...............X.................. 2       
+UserInterfaceCounter<8> 
+                  .......X.XXXXXXX........................ 8       
+UserInterfaceCounter<9> 
+                  .......X.XXXXXXXX....................... 9       
+UserInterfaceCounter<10> 
+                  .......X.XXXXXXXXX...................... 10      
+UserInterfaceCounterOverflow 
+                  X......XXXXXXXXXXX...................... 12      
+SW1_Buf           .XXXXX............XXX................... 8       
+UserInterfaceCounter<3> 
+                  .......X.XX............................. 3       
+Digit0            X.......X............................... 2       
+Digit1            X.......X............................... 2       
+Digit2            X.......X............................... 2       
+Digit3            X.......X............................... 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB12 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               26/14
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   27/29
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+Buffer_90<6>                  2     FB12_1       (b)     (b)               
+DAC8_Data_R                   8     FB12_2  100  I/O     O                 
+Buffer_45<6>                  2     FB12_3       (b)     (b)               
+Buffer_Usr<5>                 2     FB12_4       (b)     (b)               
+Buffer_90<5>                  2     FB12_5       (b)     (b)               
+Buffer_45<5>                  2     FB12_6       (b)     (b)               
+Buffer_Usr<7>                 2     FB12_7       (b)     (b)               
+Buffer_90<7>                  2     FB12_8       (b)     (b)               
+Buffer_45<7>                  2     FB12_9       (b)     (b)               
+Buffer_180<7>                 2     FB12_10      (b)     (b)               
+DAC8_Data_R_Copy              8     FB12_11 98   I/O     O                 
+DAC78_Clk                     1     FB12_12 97   I/O     O                 
+DAC78_Clk_Copy                1     FB12_13 96   I/O     O                 
+Buffer_Usr<6>                 2     FB12_14 95   I/O     (b)               
+BTN1_Buf                      3     FB12_15 94   I/O     I                 
+Buffer_0<7>                   2     FB12_16      (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN0_Buf          10: Buffer_Usr<7>     19: SigGenCtrOvf_5T 
+  2: BTN1_Buf          11: Clk               20: SigGenCtrOvf_6T 
+  3: Buffer_Usr<0>     12: SigGenCounter<0>  21: SigGenCtrOvf_7T 
+  4: Buffer_Usr<1>     13: SigGenCounter<1>  22: SigGenCtrOvf_8T 
+  5: Buffer_Usr<2>     14: SigGenCounter<2>  23: UserInterfaceCounterOverflow 
+  6: Buffer_Usr<3>     15: SigGenCounter<3>  24: WaveformCorrReg<5> 
+  7: Buffer_Usr<4>     16: SigGenCounter<4>  25: WaveformCorrReg<6> 
+  8: Buffer_Usr<5>     17: SigGenCounter<5>  26: WaveformCorrReg<7> 
+  9: Buffer_Usr<6>     18: SigGenCtrOvf_4T  
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+Buffer_90<6>      ...................X....X............... 2       
+DAC8_Data_R       ..XXXXXXXX.XXXXXX....................... 14      
+Buffer_45<6>      ..................X.....X............... 2       
+Buffer_Usr<5>     .....................X.X................ 2       
+Buffer_90<5>      ...................X...X................ 2       
+Buffer_45<5>      ..................X....X................ 2       
+Buffer_Usr<7>     .....................X...X.............. 2       
+Buffer_90<7>      ...................X.....X.............. 2       
+Buffer_45<7>      ..................X......X.............. 2       
+Buffer_180<7>     ....................X....X.............. 2       
+DAC8_Data_R_Copy  ..XXXXXXXX.XXXXXX....................... 14      
+DAC78_Clk         ..........X............................. 1       
+DAC78_Clk_Copy    ..........X............................. 1       
+Buffer_Usr<6>     .....................X..X............... 2       
+BTN1_Buf          XX....................X................. 3       
+Buffer_0<7>       .................X.......X.............. 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB13 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               11/29
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   25/31
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB13_1  75   I/O           
+(unused)                      0     FB13_2  76   I/O           
+(unused)                      0     FB13_3  77   I/O           
+(unused)                      0     FB13_4       (b)           
+(unused)                      0     FB13_5  78   I/O           
+(unused)                      0     FB13_6  79   I/O           
+N_PZ_995                      2     FB13_7       (b)     (b)               
+N_PZ_712                      2     FB13_8       (b)     (b)               
+WaveformCorrReg<1>            3     FB13_9       (b)     (b)               
+WaveformCorrReg<7>            3     FB13_10      (b)     (b)               
+WaveformCorrReg<4>            5     FB13_11      (b)     (b)               
+(unused)                      0     FB13_12 80   I/O           
+(unused)                      0     FB13_13 81   I/O           
+(unused)                      0     FB13_14 82   I/O           
+WaveformCorrReg<5>            6     FB13_15      (b)     (b)               
+WaveformCorrReg<6>            7     FB13_16      (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: N_PZ_712           5: WaveformReg<1>     9: WaveformReg<7> 
+  2: N_PZ_920           6: WaveformReg<4>    10: WaveformTypeReg<0> 
+  3: N_PZ_995           7: WaveformReg<5>    11: WaveformTypeReg<1> 
+  4: WaveformReg<0>     8: WaveformReg<6>   
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+N_PZ_995          ........XXX............................. 3       
+N_PZ_712          ...X....XXX............................. 4       
+WaveformCorrReg<1> 
+                  X...X...XXX............................. 5       
+WaveformCorrReg<7> 
+                  XX...XXXXXX............................. 8       
+WaveformCorrReg<4> 
+                  XXXX.X..XXX............................. 8       
+WaveformCorrReg<5> 
+                  XXXX.XX.XXX............................. 9       
+WaveformCorrReg<6> 
+                  XXXX.XXXXXX............................. 10      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB14 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               27/13
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   15/41
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB14_1  74   I/O           
+(unused)                      0     FB14_2  71   I/O           
+(unused)                      0     FB14_3  70   I/O           
+LD0                           1     FB14_4  69   I/O     O                 
+(unused)                      0     FB14_5       (b)           
+LD1                           1     FB14_6  68   I/O     O                 
+(unused)                      0     FB14_7       (b)           
+(unused)                      0     FB14_8       (b)           
+(unused)                      0     FB14_9       (b)           
+(unused)                      0     FB14_10      (b)           
+(unused)                      0     FB14_11      (b)           
+(unused)                      0     FB14_12      (b)           
+LD2                           1     FB14_13 66   I/O     O                 
+LD3                           1     FB14_14 64   I/O     O                 
+(unused)                      0     FB14_15      (b)           
+CG                            11    FB14_16 61   I/O     O                 
+
+Signals Used by Logic in Function Block
+  1: FrequencyNumberReg<0>     10: UserInterfaceCounter<2>  19: UserPhaseReg<1> 
+  2: FrequencyNumberReg<1>     11: UserInterfaceCounter<3>  20: UserPhaseReg<2> 
+  3: FrequencyNumberReg<2>     12: UserInterfaceCounter<4>  21: UserPhaseReg<3> 
+  4: FrequencyNumberReg<3>     13: UserInterfaceCounter<5>  22: UserPhaseReg<4> 
+  5: LD0                       14: UserInterfaceCounter<6>  23: UserPhaseReg<5> 
+  6: SW1_Buf                   15: UserInterfaceCounter<7>  24: UserPhaseReg<6> 
+  7: UserInterfaceCounter<0>   16: UserInterfaceCounter<8>  25: UserPhaseReg<7> 
+  8: UserInterfaceCounter<10>  17: UserInterfaceCounter<9>  26: WaveformTypeReg<0> 
+  9: UserInterfaceCounter<1>   18: UserPhaseReg<0>          27: WaveformTypeReg<1> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+LD0               ......XXXXXXXXXXX....................... 11      
+LD1               ....X..X................................ 2       
+LD2               ....X..X........X....................... 3       
+LD3               ....X..X.......XX....................... 4       
+CG                XXXXXX.X.........XXXXXXXXXX............. 17      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB15 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB15_1       (b)           
+(unused)                      0     FB15_2  83   I/O           
+(unused)                      0     FB15_3       (b)           
+(unused)                      0     FB15_4       (b)           
+(unused)                      0     FB15_5       (b)           
+(unused)                      0     FB15_6       (b)           
+(unused)                      0     FB15_7       (b)           
+(unused)                      0     FB15_8       (b)           
+(unused)                      0     FB15_9       (b)           
+(unused)                      0     FB15_10      (b)           
+(unused)                      0     FB15_11 85   I/O           
+(unused)                      0     FB15_12 86   I/O           
+(unused)                      0     FB15_13 87   I/O           
+(unused)                      0     FB15_14 88   I/O           
+(unused)                      0     FB15_15 91   I/O           
+(unused)                      0     FB15_16 92   I/O           
+*********************************** FB16 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               19/21
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   51/5
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB16_1       (b)           
+(unused)                      0     FB16_2       (b)           
+(unused)                      0     FB16_3       (b)           
+(unused)                      0     FB16_4       (b)           
+CC                            7     FB16_5  60   I/O     O                 
+DP                            0     FB16_6  59   I/O     O                 
+(unused)                      0     FB16_7       (b)           
+(unused)                      0     FB16_8       (b)           
+(unused)                      0     FB16_9       (b)           
+(unused)                      0     FB16_10      (b)           
+CD                            13    FB16_11 58   I/O     O                 
+CE                            10    FB16_12 57   I/O     O                 
+CA                            12    FB16_13 56   I/O     O                 
+(unused)                      0     FB16_14      (b)           
+CF                            12    FB16_15 54   I/O     O                 
+CB                            12    FB16_16 53   I/O     O                 
+
+Signals Used by Logic in Function Block
+  1: FrequencyNumberReg<0>   8: SW1_Buf                   14: UserPhaseReg<4> 
+  2: FrequencyNumberReg<1>   9: UserInterfaceCounter<10>  15: UserPhaseReg<5> 
+  3: FrequencyNumberReg<2>  10: UserPhaseReg<0>           16: UserPhaseReg<6> 
+  4: FrequencyNumberReg<3>  11: UserPhaseReg<1>           17: UserPhaseReg<7> 
+  5: LD0                    12: UserPhaseReg<2>           18: WaveformTypeReg<0> 
+  6: N_PZ_1023              13: UserPhaseReg<3>           19: WaveformTypeReg<1> 
+  7: N_PZ_961              
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+CC                XXXXXX.XXXXXXXXXXXX..................... 18      
+DP                ........................................ 0       
+CD                XXXXX.XXXXXXXXXXXXX..................... 18      
+CE                XXXXX.XXXXXXXXXXXXX..................... 18      
+CA                XXXXXXXXXXXXXXXXXXX..................... 19      
+CF                XXXXXX.XXXXXXXXXXXX..................... 18      
+CB                XXXXXXXXXXXXXXXXXXX..................... 19      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+BTN0_Buf.COMB <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_0(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_0(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_0(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_0(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_0(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_0(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_0(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_0(7)));FDCPE_BTN0_Buf: FDCPE port map (BTN0_Buf,BTN0,Clk,'0','0',UserInterfaceCounterOverflow);
+
+
+BTN1_Buf.COMB <= ((BTN1_Buf AND BTN0_Buf)
+	OR (NOT BTN1_Buf AND NOT BTN0_Buf));FDCPE_BTN1_Buf: FDCPE port map (BTN1_Buf,BTN1,Clk,'0','0',UserInterfaceCounterOverflow);
+
+FDCPE_Buffer_00: FDCPE port map (Buffer_0(0),WaveformCorrReg(0),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_01: FDCPE port map (Buffer_0(1),WaveformCorrReg(1),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_02: FDCPE port map (Buffer_0(2),WaveformCorrReg(2),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_03: FDCPE port map (Buffer_0(3),WaveformCorrReg(3),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_04: FDCPE port map (Buffer_0(4),WaveformCorrReg(4),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_05: FDCPE port map (Buffer_0(5),WaveformCorrReg(5),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_06: FDCPE port map (Buffer_0(6),WaveformCorrReg(6),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_07: FDCPE port map (Buffer_0(7),NOT WaveformCorrReg(7),Clk,'0','0',SigGenCtrOvf_4T);
+
+FDCPE_Buffer_1800: FDCPE port map (Buffer_180(0),WaveformCorrReg(0),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1801: FDCPE port map (Buffer_180(1),WaveformCorrReg(1),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1802: FDCPE port map (Buffer_180(2),WaveformCorrReg(2),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1803: FDCPE port map (Buffer_180(3),WaveformCorrReg(3),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1804: FDCPE port map (Buffer_180(4),WaveformCorrReg(4),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1805: FDCPE port map (Buffer_180(5),WaveformCorrReg(5),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1806: FDCPE port map (Buffer_180(6),WaveformCorrReg(6),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_1807: FDCPE port map (Buffer_180(7),NOT WaveformCorrReg(7),Clk,'0','0',SigGenCtrOvf_7T);
+
+FDCPE_Buffer_450: FDCPE port map (Buffer_45(0),WaveformCorrReg(0),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_451: FDCPE port map (Buffer_45(1),WaveformCorrReg(1),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_452: FDCPE port map (Buffer_45(2),WaveformCorrReg(2),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_453: FDCPE port map (Buffer_45(3),WaveformCorrReg(3),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_454: FDCPE port map (Buffer_45(4),WaveformCorrReg(4),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_455: FDCPE port map (Buffer_45(5),WaveformCorrReg(5),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_456: FDCPE port map (Buffer_45(6),WaveformCorrReg(6),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_457: FDCPE port map (Buffer_45(7),NOT WaveformCorrReg(7),Clk,'0','0',SigGenCtrOvf_5T);
+
+FDCPE_Buffer_900: FDCPE port map (Buffer_90(0),WaveformCorrReg(0),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_901: FDCPE port map (Buffer_90(1),WaveformCorrReg(1),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_902: FDCPE port map (Buffer_90(2),WaveformCorrReg(2),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_903: FDCPE port map (Buffer_90(3),WaveformCorrReg(3),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_904: FDCPE port map (Buffer_90(4),WaveformCorrReg(4),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_905: FDCPE port map (Buffer_90(5),WaveformCorrReg(5),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_906: FDCPE port map (Buffer_90(6),WaveformCorrReg(6),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_907: FDCPE port map (Buffer_90(7),NOT WaveformCorrReg(7),Clk,'0','0',SigGenCtrOvf_6T);
+
+FDCPE_Buffer_Usr0: FDCPE port map (Buffer_Usr(0),WaveformCorrReg(0),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr1: FDCPE port map (Buffer_Usr(1),WaveformCorrReg(1),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr2: FDCPE port map (Buffer_Usr(2),WaveformCorrReg(2),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr3: FDCPE port map (Buffer_Usr(3),WaveformCorrReg(3),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr4: FDCPE port map (Buffer_Usr(4),WaveformCorrReg(4),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr5: FDCPE port map (Buffer_Usr(5),WaveformCorrReg(5),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr6: FDCPE port map (Buffer_Usr(6),WaveformCorrReg(6),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_Buffer_Usr7: FDCPE port map (Buffer_Usr(7),NOT WaveformCorrReg(7),Clk,'0','0',SigGenCtrOvf_8T);
+
+FDCPE_ButtonTimeOutCounter0: FDCPE port map (ButtonTimeOutCounter(0),ButtonTimeOutCounter_D(0),Clk,'0','0','1');
+ButtonTimeOutCounter_D(0) <= ((NOT UserInterfaceCounterOverflow AND 
+	ButtonTimeOutCounter(0))
+	OR (UserInterfaceCounterOverflow AND NOT BTN1_Buf.COMB AND 
+	NOT ButtonTimeOutCounter(0)));
+
+FTCPE_ButtonTimeOutCounter1: FTCPE port map (ButtonTimeOutCounter(1),ButtonTimeOutCounter_T(1),Clk,'0','0','1');
+ButtonTimeOutCounter_T(1) <= ((UserInterfaceCounterOverflow AND BTN1_Buf.COMB AND 
+	ButtonTimeOutCounter(1))
+	OR (UserInterfaceCounterOverflow AND NOT BTN1_Buf.COMB AND 
+	ButtonTimeOutCounter(0)));
+
+FDCPE_ButtonTimeOutCounter2: FDCPE port map (ButtonTimeOutCounter(2),ButtonTimeOutCounter_D(2),Clk,'0','0','1');
+ButtonTimeOutCounter_D(2) <= NOT (((UserInterfaceCounterOverflow AND BTN1_Buf.COMB)
+	OR (ButtonTimeOutCounter(2) AND SW0_Buf.COMB)
+	OR (NOT ButtonTimeOutCounter(2) AND NOT SW0_Buf.COMB)));
+
+FDCPE_ButtonTimeOutCounter3: FDCPE port map (ButtonTimeOutCounter(3),ButtonTimeOutCounter_D(3),Clk,'0','0','1');
+ButtonTimeOutCounter_D(3) <= NOT (((N_PZ_890)
+	OR (UserInterfaceCounterOverflow AND BTN1_Buf.COMB)
+	OR (NOT ButtonTimeOutCounter(2) AND NOT ButtonTimeOutCounter(3))
+	OR (NOT SW0_Buf.COMB AND NOT ButtonTimeOutCounter(3))));
+
+FDCPE_ButtonTimeOutCounter4: FDCPE port map (ButtonTimeOutCounter(4),ButtonTimeOutCounter_D(4),Clk,'0','0','1');
+ButtonTimeOutCounter_D(4) <= NOT (((UserInterfaceCounterOverflow AND BTN1_Buf.COMB)
+	OR (ButtonTimeOutCounter(4) AND N_PZ_890)
+	OR (NOT ButtonTimeOutCounter(4) AND NOT N_PZ_890)));
+
+FTCPE_ButtonTimeOutCounter5: FTCPE port map (ButtonTimeOutCounter(5),ButtonTimeOutCounter_T(5),Clk,'0','0','1');
+ButtonTimeOutCounter_T(5) <= ((UserInterfaceCounterOverflow AND BTN1_Buf.COMB AND 
+	ButtonTimeOutCounter(5))
+	OR (NOT UserInterfaceCounterOverflow AND 
+	ButtonTimeOutCounter(4) AND N_PZ_890)
+	OR (ButtonTimeOutCounter(4) AND NOT BTN1_Buf.COMB AND 
+	N_PZ_890));
+
+FTCPE_ButtonTimeOutCounter6: FTCPE port map (ButtonTimeOutCounter(6),ButtonTimeOutCounter_T(6),Clk,'0','0','1');
+ButtonTimeOutCounter_T(6) <= ((UserInterfaceCounterOverflow AND BTN1_Buf.COMB AND 
+	ButtonTimeOutCounter(6))
+	OR (NOT UserInterfaceCounterOverflow AND 
+	ButtonTimeOutCounter(4) AND N_PZ_890 AND ButtonTimeOutCounter(5))
+	OR (ButtonTimeOutCounter(4) AND NOT BTN1_Buf.COMB AND 
+	N_PZ_890 AND ButtonTimeOutCounter(5)));
+
+FTCPE_ButtonTimeOutCounter7: FTCPE port map (ButtonTimeOutCounter(7),ButtonTimeOutCounter_T(7),Clk,'0','0','1');
+ButtonTimeOutCounter_T(7) <= ((UserInterfaceCounterOverflow AND BTN1_Buf.COMB AND 
+	ButtonTimeOutCounter(7))
+	OR (NOT UserInterfaceCounterOverflow AND 
+	ButtonTimeOutCounter(4) AND N_PZ_890 AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6))
+	OR (ButtonTimeOutCounter(4) AND NOT BTN1_Buf.COMB AND 
+	N_PZ_890 AND ButtonTimeOutCounter(5) AND ButtonTimeOutCounter(6)));
+
+
+CA <= ((N_PZ_961)
+	OR (N_PZ_1023)
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND SW1_Buf AND NOT WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND NOT SW1_Buf AND WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT WaveformTypeReg(0) AND NOT SW1_Buf AND NOT WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND UserPhaseReg(5) AND UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND NOT UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND NOT UserPhaseReg(2) AND UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND NOT UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND 
+	FrequencyNumberReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3)));
+
+
+CB <= ((UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	NOT UserPhaseReg(4) AND NOT N_PZ_961)
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(4) AND 
+	UserPhaseReg(5) AND UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND SW1_Buf AND WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND NOT SW1_Buf AND NOT WaveformTypeReg(1))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND UserPhaseReg(2))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(2) AND 
+	UserPhaseReg(3) AND NOT N_PZ_1023)
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND FrequencyNumberReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT FrequencyNumberReg(0) AND FrequencyNumberReg(2) AND NOT N_PZ_961)
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND NOT UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND UserPhaseReg(2) AND NOT N_PZ_1023)
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3)));
+
+
+CC <= ((UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	UserPhaseReg(7) AND NOT N_PZ_1023)
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND SW1_Buf AND WaveformTypeReg(1))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(2) AND 
+	UserPhaseReg(3) AND NOT N_PZ_1023)
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(2) AND FrequencyNumberReg(3) AND NOT N_PZ_1023)
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	NOT UserPhaseReg(4) AND UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND NOT UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3)));
+
+
+CD <= ((N_PZ_961)
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND UserPhaseReg(5))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND SW1_Buf AND NOT WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT WaveformTypeReg(0) AND NOT SW1_Buf AND NOT WaveformTypeReg(1))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND UserPhaseReg(2))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND FrequencyNumberReg(2))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND NOT UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	NOT UserPhaseReg(4) AND UserPhaseReg(5) AND UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND NOT UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND NOT UserPhaseReg(2) AND UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND 
+	FrequencyNumberReg(3)));
+
+
+CE <= ((N_PZ_961)
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(4) AND 
+	NOT UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND NOT WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT WaveformTypeReg(0) AND NOT SW1_Buf)
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(3))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND NOT UserPhaseReg(5))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND NOT UserPhaseReg(2))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(1) AND 
+	UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2)));
+
+
+CF <= ((N_PZ_1023)
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(4) AND 
+	UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND NOT SW1_Buf AND WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT WaveformTypeReg(0) AND NOT SW1_Buf AND NOT WaveformTypeReg(1))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(1) AND 
+	NOT UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND NOT FrequencyNumberReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND NOT FrequencyNumberReg(3))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND NOT UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3)));
+
+
+CG <= ((UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT WaveformTypeReg(0) AND NOT WaveformTypeReg(1))
+	OR (UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(6) AND 
+	NOT UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND NOT LD0 AND 
+	WaveformTypeReg(0) AND SW1_Buf AND WaveformTypeReg(1))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(1) AND 
+	NOT UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2) AND NOT FrequencyNumberReg(3))
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	NOT UserPhaseReg(4) AND NOT UserPhaseReg(5) AND UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND UserPhaseReg(2) AND NOT UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND NOT UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND UserPhaseReg(2) AND UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND FrequencyNumberReg(2) AND 
+	FrequencyNumberReg(3)));
+
+
+DAC12_Clk_Copy <= NOT Clk;
+
+
+DAC12_Clk <= NOT Clk;
+
+FDCPE_DAC12_nLE_R_Copy: FDCPE port map (DAC12_nLE_R_Copy,DAC12_nLE_R_Copy_D,Clk,'0','0','1');
+DAC12_nLE_R_Copy_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC12_nLE_R: FDCPE port map (DAC12_nLE_R,DAC12_nLE_R_D,Clk,'0','0','1');
+DAC12_nLE_R_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC1_Data_R_Copy: FDCPE port map (DAC1_Data_R_Copy,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC1_Data_R: FDCPE port map (DAC1_Data_R,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC2_Data_R_Copy: FDCPE port map (DAC2_Data_R_Copy,DAC2_Data_R_Copy_D,Clk,'0','0','1');
+DAC2_Data_R_Copy_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(7)));
+
+FDCPE_DAC2_Data_R: FDCPE port map (DAC2_Data_R,DAC2_Data_R_D,Clk,'0','0','1');
+DAC2_Data_R_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_45(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_45(7)));
+
+
+DAC34_Clk_Copy <= NOT Clk;
+
+
+DAC34_Clk <= NOT Clk;
+
+FDCPE_DAC34_nLE_R_Copy: FDCPE port map (DAC34_nLE_R_Copy,DAC34_nLE_R_Copy_D,Clk,'0','0','1');
+DAC34_nLE_R_Copy_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC34_nLE_R: FDCPE port map (DAC34_nLE_R,DAC34_nLE_R_D,Clk,'0','0','1');
+DAC34_nLE_R_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC3_Data_R_Copy: FDCPE port map (DAC3_Data_R_Copy,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC3_Data_R: FDCPE port map (DAC3_Data_R,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC4_Data_R_Copy: FDCPE port map (DAC4_Data_R_Copy,DAC4_Data_R_Copy_D,Clk,'0','0','1');
+DAC4_Data_R_Copy_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(7)));
+
+FDCPE_DAC4_Data_R: FDCPE port map (DAC4_Data_R,DAC4_Data_R_D,Clk,'0','0','1');
+DAC4_Data_R_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_90(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_90(7)));
+
+
+DAC56_Clk_Copy <= NOT Clk;
+
+
+DAC56_Clk <= NOT Clk;
+
+FDCPE_DAC56_nLE_R_Copy: FDCPE port map (DAC56_nLE_R_Copy,DAC56_nLE_R_Copy_D,Clk,'0','0','1');
+DAC56_nLE_R_Copy_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC56_nLE_R: FDCPE port map (DAC56_nLE_R,DAC56_nLE_R_D,Clk,'0','0','1');
+DAC56_nLE_R_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC5_Data_R_Copy: FDCPE port map (DAC5_Data_R_Copy,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC5_Data_R: FDCPE port map (DAC5_Data_R,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC6_Data_R_Copy: FDCPE port map (DAC6_Data_R_Copy,DAC6_Data_R_Copy_D,Clk,'0','0','1');
+DAC6_Data_R_Copy_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(7)));
+
+FDCPE_DAC6_Data_R: FDCPE port map (DAC6_Data_R,DAC6_Data_R_D,Clk,'0','0','1');
+DAC6_Data_R_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_180(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_180(7)));
+
+
+DAC78_Clk_Copy <= NOT Clk;
+
+
+DAC78_Clk <= NOT Clk;
+
+FDCPE_DAC78_nLE_R_Copy: FDCPE port map (DAC78_nLE_R_Copy,DAC78_nLE_R_Copy_D,Clk,'0','0','1');
+DAC78_nLE_R_Copy_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC78_nLE_R: FDCPE port map (DAC78_nLE_R,DAC78_nLE_R_D,Clk,'0','0','1');
+DAC78_nLE_R_D <= NOT ((NOT SigGenCounter(4) AND NOT SigGenCounter(5)));
+
+FDCPE_DAC7_Data_R_Copy: FDCPE port map (DAC7_Data_R_Copy,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC7_Data_R: FDCPE port map (DAC7_Data_R,BTN0_Buf.COMB,Clk,'0','0','1');
+
+FDCPE_DAC8_Data_R_Copy: FDCPE port map (DAC8_Data_R_Copy,DAC8_Data_R_Copy_D,Clk,'0','0','1');
+DAC8_Data_R_Copy_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(7)));
+
+FDCPE_DAC8_Data_R: FDCPE port map (DAC8_Data_R,DAC8_Data_R_D,Clk,'0','0','1');
+DAC8_Data_R_D <= ((NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(0))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(1))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(2))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(3))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(4))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(5))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	SigGenCounter(0) AND Buffer_Usr(6))
+	OR (NOT SigGenCounter(4) AND SigGenCounter(3) AND 
+	NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND 
+	NOT SigGenCounter(0) AND Buffer_Usr(7)));
+
+
+DP <= NOT ('0');
+
+
+Digit0 <= NOT ((NOT UserInterfaceCounter(10) AND LD0));
+
+
+Digit1 <= NOT ((UserInterfaceCounter(10) AND LD0));
+
+
+Digit2 <= NOT ((NOT UserInterfaceCounter(10) AND NOT LD0));
+
+
+Digit3 <= NOT ((UserInterfaceCounter(10) AND NOT LD0));
+
+FTCPE_FrequencyNumberReg0: FTCPE port map (FrequencyNumberReg(0),FrequencyNumberReg_T(0),Clk,'0','0','1');
+FrequencyNumberReg_T(0) <= (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND 
+	NOT BTN1_Buf.COMB AND N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7));
+
+FTCPE_FrequencyNumberReg1: FTCPE port map (FrequencyNumberReg(1),FrequencyNumberReg_T(1),Clk,'0','0','1');
+FrequencyNumberReg_T(1) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	FrequencyNumberReg(0))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT FrequencyNumberReg(0)));
+
+FTCPE_FrequencyNumberReg2: FTCPE port map (FrequencyNumberReg(2),FrequencyNumberReg_T(2),Clk,'0','0','1');
+FrequencyNumberReg_T(2) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1)));
+
+FTCPE_FrequencyNumberReg3: FTCPE port map (FrequencyNumberReg(3),FrequencyNumberReg_T(3),Clk,'0','0','1');
+FrequencyNumberReg_T(3) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND FrequencyNumberReg(2))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND NOT FrequencyNumberReg(2)));
+
+FTCPE_LD0: FTCPE port map (LD0,LD0_T,Clk,'0','0','1');
+LD0_T <= (UserInterfaceCounter(0) AND 
+	UserInterfaceCounter(10) AND UserInterfaceCounter(9) AND UserInterfaceCounter(8) AND 
+	UserInterfaceCounter(1) AND UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND 
+	UserInterfaceCounter(4) AND UserInterfaceCounter(5) AND UserInterfaceCounter(6) AND 
+	UserInterfaceCounter(7));
+
+
+LD1 <= NOT ((UserInterfaceCounter(10) AND LD0));
+
+
+LD2 <= NOT ((NOT UserInterfaceCounter(10) AND 
+	UserInterfaceCounter(9) AND LD0));
+
+
+LD3 <= NOT ((NOT UserInterfaceCounter(10) AND 
+	NOT UserInterfaceCounter(9) AND UserInterfaceCounter(8) AND LD0));
+
+
+N_PZ_1023 <= ((UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	UserPhaseReg(4) AND NOT UserPhaseReg(5) AND UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(0) AND 
+	NOT UserPhaseReg(1) AND UserPhaseReg(2) AND UserPhaseReg(3))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND FrequencyNumberReg(2) AND 
+	FrequencyNumberReg(3)));
+
+
+N_PZ_1044 <= ((NOT WaveformTypeReg(1) AND PhaseReg(6) AND N_PZ_888)
+	OR (NOT PhaseReg(6) AND NOT PhaseReg(5) AND NOT PhaseReg(4)));
+
+
+N_PZ_700 <= ((PhaseReg(2) AND PhaseReg(3))
+	OR (NOT PhaseReg(2) AND NOT PhaseReg(3)));
+
+
+N_PZ_712 <= ((WaveformTypeReg(0) AND WaveformTypeReg(1))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(0) AND 
+	WaveformReg(7)));
+
+
+N_PZ_773 <= ((UserPhaseReg(4) AND N_PZ_888)
+	OR (UserPhaseReg(5) AND PhaseReg(5))
+	OR (UserPhaseReg(4) AND UserPhaseReg(5) AND PhaseReg(4))
+	OR (UserPhaseReg(4) AND UserPhaseReg(5) AND SW1_Buf.COMB)
+	OR (UserPhaseReg(4) AND PhaseReg(5) AND SW1_Buf.COMB)
+	OR (UserPhaseReg(5) AND PhaseReg(4) AND SW1_Buf.COMB));
+
+
+N_PZ_775 <= ((UserPhaseReg(1) AND PhaseReg(1))
+	OR (UserPhaseReg(0) AND UserPhaseReg(1) AND PhaseReg(0))
+	OR (UserPhaseReg(0) AND PhaseReg(0) AND PhaseReg(1)));
+
+
+N_PZ_800 <= (NOT SW1_Buf AND SigGenCtrOvf_1T)
+	XOR ((NOT SW1_Buf AND NOT FrequencyNumberReg(3) AND 
+	SigGenCtrOvf_1T AND NOT RefPhaseCounter(1))
+	OR (NOT SW1_Buf AND NOT FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3) AND SigGenCtrOvf_1T AND NOT RefPhaseCounter(0))
+	OR (NOT SW1_Buf AND NOT FrequencyNumberReg(2) AND 
+	SigGenCtrOvf_1T AND NOT RefPhaseCounter(0) AND NOT RefPhaseCounter(1)));
+
+
+N_PZ_887 <= (NOT SigGenCtrOvf_3T AND NOT SigGenCtrOvf_2T);
+
+
+N_PZ_888 <= (PhaseReg(5) AND PhaseReg(4));
+
+
+N_PZ_890 <= (ButtonTimeOutCounter(2) AND SW0_Buf.COMB AND 
+	ButtonTimeOutCounter(3));
+
+
+N_PZ_920 <= (NOT WaveformReg(1) AND NOT WaveformReg(2) AND NOT WaveformReg(3));
+
+
+N_PZ_921 <= ((PhaseReg(2))
+	OR (PhaseReg(0) AND PhaseReg(1)));
+
+
+N_PZ_926 <= (SigGenCounter(2) AND SigGenCounter(1) AND 
+	SigGenCounter(0));
+
+
+N_PZ_942 <= ((NOT PhaseReg(2))
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(1)));
+
+
+N_PZ_961 <= ((UserInterfaceCounter(10) AND LD0 AND UserPhaseReg(6) AND 
+	NOT UserPhaseReg(4) AND NOT UserPhaseReg(5) AND NOT UserPhaseReg(7))
+	OR (NOT UserInterfaceCounter(10) AND NOT LD0 AND 
+	NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND FrequencyNumberReg(2) AND 
+	NOT FrequencyNumberReg(3)));
+
+
+N_PZ_995 <= ((NOT WaveformTypeReg(0) AND WaveformTypeReg(1))
+	OR (NOT WaveformTypeReg(0) AND NOT WaveformReg(7)));
+
+FTCPE_PhaseReg0: FTCPE port map (PhaseReg(0),PhaseReg_T(0),Clk,'0','0','1');
+PhaseReg_T(0) <= ((PhaseReg(0) AND SigGenCtrOvf_1T AND 
+	NOT RefPhaseCounter(0))
+	OR (NOT PhaseReg(0) AND SigGenCtrOvf_1T AND 
+	RefPhaseCounter(0))
+	OR (UserPhaseReg(0) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887));
+
+FTCPE_PhaseReg1: FTCPE port map (PhaseReg(1),PhaseReg_T(1),Clk,'0','0','1');
+PhaseReg_T(1) <= ((SigGenCtrOvf_1T AND RefPhaseCounter(1) AND 
+	NOT PhaseReg(1))
+	OR (SigGenCtrOvf_1T AND NOT RefPhaseCounter(1) AND 
+	PhaseReg(1))
+	OR (NOT UserPhaseReg(0) AND UserPhaseReg(1) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887)
+	OR (UserPhaseReg(1) AND NOT PhaseReg(0) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887)
+	OR (UserPhaseReg(0) AND NOT UserPhaseReg(1) AND PhaseReg(0) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887));
+
+FTCPE_PhaseReg2: FTCPE port map (PhaseReg(2),PhaseReg_T(2),Clk,'0','0','1');
+PhaseReg_T(2) <= ((SigGenCtrOvf_1T AND RefPhaseCounter(2) AND 
+	NOT PhaseReg(2))
+	OR (SigGenCtrOvf_1T AND NOT RefPhaseCounter(2) AND 
+	PhaseReg(2))
+	OR (UserPhaseReg(2) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND NOT N_PZ_775)
+	OR (NOT UserPhaseReg(2) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND N_PZ_775));
+
+FTCPE_PhaseReg3: FTCPE port map (PhaseReg(3),PhaseReg_T(3),Clk,'0','0','1');
+PhaseReg_T(3) <= ((SigGenCtrOvf_1T AND RefPhaseCounter(3) AND 
+	NOT PhaseReg(3))
+	OR (SigGenCtrOvf_1T AND NOT RefPhaseCounter(3) AND 
+	PhaseReg(3))
+	OR (UserPhaseReg(2) AND NOT UserPhaseReg(3) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	PhaseReg(2))
+	OR (UserPhaseReg(2) AND NOT UserPhaseReg(3) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	N_PZ_775)
+	OR (NOT UserPhaseReg(2) AND UserPhaseReg(3) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	NOT PhaseReg(2))
+	OR (NOT UserPhaseReg(2) AND UserPhaseReg(3) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	NOT N_PZ_775)
+	OR (UserPhaseReg(3) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND NOT PhaseReg(2) AND 
+	NOT N_PZ_775)
+	OR (NOT UserPhaseReg(3) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND PhaseReg(2) AND 
+	N_PZ_775));
+
+FTCPE_PhaseReg4: FTCPE port map (PhaseReg(4),PhaseReg_T(4),Clk,'0','0','1');
+PhaseReg_T(4) <= (NOT SigGenCtrOvf_1T AND SW1_Buf.COMB)
+	XOR ((SigGenCtrOvf_1T AND RefPhaseCounter(4) AND 
+	NOT PhaseReg(4))
+	OR (SigGenCtrOvf_1T AND NOT RefPhaseCounter(4) AND 
+	PhaseReg(4))
+	OR (UserPhaseReg(4) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887)
+	OR (NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND 
+	NOT SigGenCtrOvf_5T AND N_PZ_887 AND SW1_Buf.COMB));
+
+FTCPE_PhaseReg5: FTCPE port map (PhaseReg(5),PhaseReg_T(5),Clk,'0','0','1');
+PhaseReg_T(5) <= ((SigGenCtrOvf_1T AND RefPhaseCounter(5) AND 
+	NOT PhaseReg(5))
+	OR (SigGenCtrOvf_1T AND NOT RefPhaseCounter(5) AND 
+	PhaseReg(5))
+	OR (NOT SigGenCtrOvf_1T AND NOT N_PZ_887 AND NOT PhaseReg(4))
+	OR (NOT SigGenCtrOvf_1T AND NOT N_PZ_887 AND NOT SW1_Buf.COMB)
+	OR (NOT SigGenCtrOvf_1T AND SigGenCtrOvf_4T AND N_PZ_887 AND 
+	PhaseReg(4) AND SW1_Buf.COMB)
+	OR (NOT UserPhaseReg(4) AND UserPhaseReg(5) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND NOT PhaseReg(4))
+	OR (NOT UserPhaseReg(4) AND UserPhaseReg(5) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND NOT SW1_Buf.COMB)
+	OR (UserPhaseReg(5) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND NOT PhaseReg(4) AND NOT SW1_Buf.COMB)
+	OR (NOT UserPhaseReg(5) AND NOT SigGenCtrOvf_1T AND 
+	SigGenCtrOvf_5T AND N_PZ_887 AND PhaseReg(4) AND SW1_Buf.COMB)
+	OR (UserPhaseReg(4) AND NOT UserPhaseReg(5) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	PhaseReg(4))
+	OR (UserPhaseReg(4) AND NOT UserPhaseReg(5) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	SW1_Buf.COMB));
+
+FTCPE_PhaseReg6: FTCPE port map (PhaseReg(6),PhaseReg_T(6),Clk,'0','0','1');
+PhaseReg_T(6) <= NOT (((SigGenCtrOvf_1T AND PhaseReg(6) AND 
+	RefPhaseCounter(6))
+	OR (SigGenCtrOvf_1T AND NOT PhaseReg(6) AND 
+	NOT RefPhaseCounter(6))
+	OR (NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND 
+	NOT SigGenCtrOvf_5T AND N_PZ_887)
+	OR (NOT SigGenCtrOvf_1T AND NOT N_PZ_887 AND NOT PhaseReg(5) AND 
+	NOT PhaseReg(4))
+	OR (NOT SigGenCtrOvf_1T AND NOT N_PZ_887 AND NOT PhaseReg(5) AND 
+	NOT SW1_Buf.COMB)
+	OR (UserPhaseReg(6) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND N_PZ_887 AND N_PZ_773)
+	OR (UserPhaseReg(6) AND NOT SigGenCtrOvf_1T AND N_PZ_887 AND 
+	SW1_Buf.COMB AND N_PZ_888)
+	OR (NOT SigGenCtrOvf_1T AND SigGenCtrOvf_4T AND N_PZ_887 AND 
+	SW1_Buf.COMB AND N_PZ_888)
+	OR (NOT UserPhaseReg(6) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND N_PZ_887 AND NOT SW1_Buf.COMB AND NOT N_PZ_773)
+	OR (NOT UserPhaseReg(6) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND N_PZ_887 AND NOT N_PZ_888 AND NOT N_PZ_773)));
+
+FTCPE_PhaseReg7: FTCPE port map (PhaseReg(7),PhaseReg_T(7),Clk,'0','0','1');
+PhaseReg_T(7) <= ((SigGenCtrOvf_1T AND PhaseReg(7) AND 
+	NOT RefPhaseCounter(7))
+	OR (SigGenCtrOvf_1T AND NOT PhaseReg(7) AND 
+	RefPhaseCounter(7))
+	OR (NOT SigGenCtrOvf_1T AND SigGenCtrOvf_4T AND N_PZ_887 AND 
+	PhaseReg(6))
+	OR (NOT SigGenCtrOvf_1T AND NOT N_PZ_887 AND PhaseReg(6) AND 
+	PhaseReg(5))
+	OR (NOT SigGenCtrOvf_1T AND SigGenCtrOvf_4T AND N_PZ_887 AND 
+	SW1_Buf.COMB AND N_PZ_888)
+	OR (NOT SigGenCtrOvf_1T AND NOT N_PZ_887 AND PhaseReg(6) AND 
+	PhaseReg(4) AND SW1_Buf.COMB)
+	OR (UserPhaseReg(6) AND UserPhaseReg(7) AND 
+	NOT SigGenCtrOvf_1T AND SigGenCtrOvf_5T AND N_PZ_887 AND PhaseReg(6))
+	OR (UserPhaseReg(7) AND NOT SigGenCtrOvf_1T AND 
+	SigGenCtrOvf_5T AND N_PZ_887 AND PhaseReg(6) AND N_PZ_773)
+	OR (UserPhaseReg(7) AND NOT SigGenCtrOvf_1T AND 
+	SigGenCtrOvf_5T AND PhaseReg(6) AND SW1_Buf.COMB AND N_PZ_888)
+	OR (UserPhaseReg(6) AND UserPhaseReg(7) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	N_PZ_773)
+	OR (UserPhaseReg(6) AND UserPhaseReg(7) AND 
+	NOT SigGenCtrOvf_1T AND SigGenCtrOvf_5T AND N_PZ_887 AND SW1_Buf.COMB AND 
+	N_PZ_888)
+	OR (NOT UserPhaseReg(6) AND NOT UserPhaseReg(7) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	NOT PhaseReg(6))
+	OR (NOT UserPhaseReg(6) AND NOT UserPhaseReg(7) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	NOT SW1_Buf.COMB AND NOT N_PZ_773)
+	OR (NOT UserPhaseReg(6) AND NOT UserPhaseReg(7) AND 
+	NOT SigGenCtrOvf_1T AND NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND 
+	NOT N_PZ_888 AND NOT N_PZ_773)
+	OR (NOT UserPhaseReg(7) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND NOT PhaseReg(6) AND 
+	NOT SW1_Buf.COMB AND NOT N_PZ_773)
+	OR (NOT UserPhaseReg(7) AND NOT SigGenCtrOvf_1T AND 
+	NOT SigGenCtrOvf_4T AND SigGenCtrOvf_5T AND N_PZ_887 AND NOT PhaseReg(6) AND 
+	NOT N_PZ_888 AND NOT N_PZ_773));
+
+FTCPE_RefPhaseCounter0: FTCPE port map (RefPhaseCounter(0),RefPhaseCounter_T(0),Clk,'0','0','1');
+RefPhaseCounter_T(0) <= (NOT SW1_Buf AND NOT FrequencyNumberReg(2) AND 
+	SigGenCtrOvf_1T);
+
+FTCPE_RefPhaseCounter1: FTCPE port map (RefPhaseCounter(1),RefPhaseCounter_T(1),Clk,'0','0','1');
+RefPhaseCounter_T(1) <= (NOT SW1_Buf AND NOT FrequencyNumberReg(3) AND 
+	SigGenCtrOvf_1T)
+	XOR (NOT SW1_Buf AND NOT FrequencyNumberReg(2) AND 
+	SigGenCtrOvf_1T AND NOT RefPhaseCounter(0));
+
+FTCPE_RefPhaseCounter2: FTCPE port map (RefPhaseCounter(2),N_PZ_800,Clk,'0','0','1');
+
+FTCPE_RefPhaseCounter3: FTCPE port map (RefPhaseCounter(3),RefPhaseCounter_T(3),Clk,'0','0','1');
+RefPhaseCounter_T(3) <= (RefPhaseCounter(2) AND N_PZ_800);
+
+FTCPE_RefPhaseCounter4: FTCPE port map (RefPhaseCounter(4),RefPhaseCounter_T(4),Clk,'0','0','1');
+RefPhaseCounter_T(4) <= (RefPhaseCounter(2) AND N_PZ_800 AND 
+	RefPhaseCounter(3));
+
+FTCPE_RefPhaseCounter5: FTCPE port map (RefPhaseCounter(5),RefPhaseCounter_T(5),Clk,'0','0','1');
+RefPhaseCounter_T(5) <= (RefPhaseCounter(2) AND N_PZ_800 AND 
+	RefPhaseCounter(3) AND RefPhaseCounter(4));
+
+FTCPE_RefPhaseCounter6: FTCPE port map (RefPhaseCounter(6),RefPhaseCounter_T(6),Clk,'0','0','1');
+RefPhaseCounter_T(6) <= (RefPhaseCounter(2) AND N_PZ_800 AND 
+	RefPhaseCounter(3) AND RefPhaseCounter(4) AND RefPhaseCounter(5));
+
+FTCPE_RefPhaseCounter7: FTCPE port map (RefPhaseCounter(7),RefPhaseCounter_T(7),Clk,'0','0','1');
+RefPhaseCounter_T(7) <= (RefPhaseCounter(6) AND RefPhaseCounter(2) AND 
+	N_PZ_800 AND RefPhaseCounter(3) AND RefPhaseCounter(4) AND 
+	RefPhaseCounter(5));
+
+
+SW0_Buf.COMB <= (UserInterfaceCounterOverflow AND 
+	ButtonTimeOutCounter(0) AND ButtonTimeOutCounter(1));FDCPE_SW0_Buf: FDCPE port map (SW0_Buf,SW0,Clk,'0','0',UserInterfaceCounterOverflow);
+
+
+SW1_Buf.COMB <= ((UserPhaseReg(3) AND NOT SigGenCtrOvf_4T AND N_PZ_887 AND 
+	PhaseReg(3))
+	OR (UserPhaseReg(2) AND UserPhaseReg(3) AND 
+	NOT SigGenCtrOvf_4T AND N_PZ_887 AND NOT N_PZ_700)
+	OR (UserPhaseReg(2) AND UserPhaseReg(3) AND 
+	NOT SigGenCtrOvf_4T AND N_PZ_887 AND N_PZ_775)
+	OR (UserPhaseReg(2) AND NOT SigGenCtrOvf_4T AND N_PZ_887 AND 
+	N_PZ_700 AND PhaseReg(3))
+	OR (UserPhaseReg(2) AND NOT SigGenCtrOvf_4T AND N_PZ_887 AND 
+	N_PZ_775 AND PhaseReg(3))
+	OR (UserPhaseReg(3) AND NOT SigGenCtrOvf_4T AND N_PZ_887 AND 
+	NOT N_PZ_700 AND N_PZ_775)
+	OR (NOT SigGenCtrOvf_4T AND N_PZ_887 AND N_PZ_700 AND 
+	N_PZ_775 AND PhaseReg(3)));FDCPE_SW1_Buf: FDCPE port map (SW1_Buf,SW1,Clk,'0','0',UserInterfaceCounterOverflow);
+
+FTCPE_SigGenCounter0: FTCPE port map (SigGenCounter(0),SigGenCounter_T(0),Clk,'0','0','1');
+SigGenCounter_T(0) <= NOT ((FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND SigGenCounter(3) AND NOT SigGenCounter(5) AND 
+	NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND NOT SigGenCounter(0)));
+
+FTCPE_SigGenCounter1: FTCPE port map (SigGenCounter(1),SigGenCounter(0),Clk,'0','0','1');
+
+FTCPE_SigGenCounter2: FTCPE port map (SigGenCounter(2),SigGenCounter_T(2),Clk,'0','0','1');
+SigGenCounter_T(2) <= NOT (((NOT SigGenCounter(1))
+	OR (NOT SigGenCounter(0))
+	OR (NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND NOT SigGenCounter(3) AND NOT SigGenCounter(5) AND 
+	NOT SigGenCounter(2))));
+
+FDCPE_SigGenCounter3: FDCPE port map (SigGenCounter(3),SigGenCounter_D(3),Clk,'0','0','1');
+SigGenCounter_D(3) <= NOT (((SigGenCounter(3) AND N_PZ_926)
+	OR (NOT SigGenCounter(3) AND NOT N_PZ_926)
+	OR (FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND 
+	NOT SigGenCounter(4) AND NOT SigGenCounter(3) AND SigGenCounter(5))
+	OR (FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND 
+	NOT SigGenCounter(1) AND NOT SigGenCounter(0))));
+
+FDCPE_SigGenCounter4: FDCPE port map (SigGenCounter(4),SigGenCounter_D(4),Clk,'0','0','1');
+SigGenCounter_D(4) <= NOT (((NOT SigGenCounter(4) AND NOT SigGenCounter(3))
+	OR (NOT SigGenCounter(4) AND NOT N_PZ_926)
+	OR (SigGenCounter(4) AND SigGenCounter(3) AND N_PZ_926)
+	OR (FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	SigGenCounter(3) AND NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND 
+	NOT SigGenCounter(1) AND NOT SigGenCounter(0))
+	OR (NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	NOT SigGenCounter(3) AND NOT SigGenCounter(5) AND NOT SigGenCounter(2) AND 
+	SigGenCounter(1) AND SigGenCounter(0))));
+
+FTCPE_SigGenCounter5: FTCPE port map (SigGenCounter(5),SigGenCounter_T(5),Clk,'0','0','1');
+SigGenCounter_T(5) <= (SigGenCounter(4) AND SigGenCounter(3) AND N_PZ_926)
+	XOR ((FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND 
+	NOT SigGenCounter(4) AND NOT SigGenCounter(3) AND SigGenCounter(5) AND N_PZ_926)
+	OR (NOT FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND SigGenCounter(3) AND NOT SigGenCounter(5) AND N_PZ_926));
+
+FDCPE_SigGenCtrOvf_1T: FDCPE port map (SigGenCtrOvf_1T,SigGenCtrOvf_1T_D,Clk,'0','0','1');
+SigGenCtrOvf_1T_D <= ((FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND 
+	NOT SigGenCounter(4) AND NOT SigGenCounter(3) AND SigGenCounter(5) AND N_PZ_926)
+	OR (NOT FrequencyNumberReg(0) AND FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND SigGenCounter(3) AND NOT SigGenCounter(5) AND N_PZ_926)
+	OR (FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND SigGenCounter(3) AND NOT SigGenCounter(5) AND 
+	NOT SigGenCounter(2) AND NOT SigGenCounter(1) AND NOT SigGenCounter(0))
+	OR (NOT FrequencyNumberReg(0) AND NOT FrequencyNumberReg(1) AND 
+	SigGenCounter(4) AND NOT SigGenCounter(3) AND NOT SigGenCounter(5) AND 
+	NOT SigGenCounter(2) AND SigGenCounter(1) AND SigGenCounter(0)));
+
+FDCPE_SigGenCtrOvf_2T: FDCPE port map (SigGenCtrOvf_2T,SigGenCtrOvf_1T,Clk,'0','0','1');
+
+FDCPE_SigGenCtrOvf_3T: FDCPE port map (SigGenCtrOvf_3T,SigGenCtrOvf_2T,Clk,'0','0','1');
+
+FDCPE_SigGenCtrOvf_4T: FDCPE port map (SigGenCtrOvf_4T,SigGenCtrOvf_3T,Clk,'0','0','1');
+
+FDCPE_SigGenCtrOvf_5T: FDCPE port map (SigGenCtrOvf_5T,SigGenCtrOvf_4T,Clk,'0','0','1');
+
+FDCPE_SigGenCtrOvf_6T: FDCPE port map (SigGenCtrOvf_6T,SigGenCtrOvf_5T,Clk,'0','0','1');
+
+FDCPE_SigGenCtrOvf_7T: FDCPE port map (SigGenCtrOvf_7T,SigGenCtrOvf_6T,Clk,'0','0','1');
+
+FDCPE_SigGenCtrOvf_8T: FDCPE port map (SigGenCtrOvf_8T,SigGenCtrOvf_7T,Clk,'0','0','1');
+
+FTCPE_UserInterfaceCounter0: FTCPE port map (UserInterfaceCounter(0),'0',Clk,'0','0','1');
+
+FTCPE_UserInterfaceCounter1: FTCPE port map (UserInterfaceCounter(1),UserInterfaceCounter(0),Clk,'0','0','1');
+
+FTCPE_UserInterfaceCounter2: FTCPE port map (UserInterfaceCounter(2),UserInterfaceCounter_T(2),Clk,'0','0','1');
+UserInterfaceCounter_T(2) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1));
+
+FTCPE_UserInterfaceCounter3: FTCPE port map (UserInterfaceCounter(3),UserInterfaceCounter_T(3),Clk,'0','0','1');
+UserInterfaceCounter_T(3) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1) AND 
+	UserInterfaceCounter(2));
+
+FTCPE_UserInterfaceCounter4: FTCPE port map (UserInterfaceCounter(4),UserInterfaceCounter_T(4),Clk,'0','0','1');
+UserInterfaceCounter_T(4) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1) AND 
+	UserInterfaceCounter(2) AND UserInterfaceCounter(3));
+
+FTCPE_UserInterfaceCounter5: FTCPE port map (UserInterfaceCounter(5),UserInterfaceCounter_T(5),Clk,'0','0','1');
+UserInterfaceCounter_T(5) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1) AND 
+	UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND UserInterfaceCounter(4));
+
+FTCPE_UserInterfaceCounter6: FTCPE port map (UserInterfaceCounter(6),UserInterfaceCounter_T(6),Clk,'0','0','1');
+UserInterfaceCounter_T(6) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1) AND 
+	UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND UserInterfaceCounter(4) AND 
+	UserInterfaceCounter(5));
+
+FTCPE_UserInterfaceCounter7: FTCPE port map (UserInterfaceCounter(7),UserInterfaceCounter_T(7),Clk,'0','0','1');
+UserInterfaceCounter_T(7) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1) AND 
+	UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND UserInterfaceCounter(4) AND 
+	UserInterfaceCounter(5) AND UserInterfaceCounter(6));
+
+FTCPE_UserInterfaceCounter8: FTCPE port map (UserInterfaceCounter(8),UserInterfaceCounter_T(8),Clk,'0','0','1');
+UserInterfaceCounter_T(8) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(1) AND 
+	UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND UserInterfaceCounter(4) AND 
+	UserInterfaceCounter(5) AND UserInterfaceCounter(6) AND UserInterfaceCounter(7));
+
+FTCPE_UserInterfaceCounter9: FTCPE port map (UserInterfaceCounter(9),UserInterfaceCounter_T(9),Clk,'0','0','1');
+UserInterfaceCounter_T(9) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(8) AND 
+	UserInterfaceCounter(1) AND UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND 
+	UserInterfaceCounter(4) AND UserInterfaceCounter(5) AND UserInterfaceCounter(6) AND 
+	UserInterfaceCounter(7));
+
+FTCPE_UserInterfaceCounter10: FTCPE port map (UserInterfaceCounter(10),UserInterfaceCounter_T(10),Clk,'0','0','1');
+UserInterfaceCounter_T(10) <= (UserInterfaceCounter(0) AND UserInterfaceCounter(9) AND 
+	UserInterfaceCounter(8) AND UserInterfaceCounter(1) AND UserInterfaceCounter(2) AND 
+	UserInterfaceCounter(3) AND UserInterfaceCounter(4) AND UserInterfaceCounter(5) AND 
+	UserInterfaceCounter(6) AND UserInterfaceCounter(7));
+
+FDCPE_UserInterfaceCounterOverflow: FDCPE port map (UserInterfaceCounterOverflow,UserInterfaceCounterOverflow_D,Clk,'0','0','1');
+UserInterfaceCounterOverflow_D <= (UserInterfaceCounter(0) AND 
+	UserInterfaceCounter(10) AND UserInterfaceCounter(9) AND UserInterfaceCounter(8) AND 
+	UserInterfaceCounter(1) AND UserInterfaceCounter(2) AND UserInterfaceCounter(3) AND 
+	UserInterfaceCounter(4) AND UserInterfaceCounter(5) AND UserInterfaceCounter(6) AND 
+	UserInterfaceCounter(7) AND NOT LD0);
+
+FTCPE_UserPhaseReg0: FTCPE port map (UserPhaseReg(0),UserPhaseReg_T(0),Clk,'0','0','1');
+UserPhaseReg_T(0) <= (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND 
+	NOT BTN1_Buf.COMB AND N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7));
+
+FTCPE_UserPhaseReg1: FTCPE port map (UserPhaseReg(1),UserPhaseReg_T(1),Clk,'0','0','1');
+UserPhaseReg_T(1) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	UserPhaseReg(0))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(0)));
+
+FTCPE_UserPhaseReg2: FTCPE port map (UserPhaseReg(2),UserPhaseReg_T(2),Clk,'0','0','1');
+UserPhaseReg_T(2) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	UserPhaseReg(0) AND UserPhaseReg(1))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(0) AND NOT UserPhaseReg(1)));
+
+FTCPE_UserPhaseReg3: FTCPE port map (UserPhaseReg(3),UserPhaseReg_T(3),Clk,'0','0','1');
+UserPhaseReg_T(3) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	UserPhaseReg(0) AND UserPhaseReg(1) AND UserPhaseReg(2))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(0) AND NOT UserPhaseReg(1) AND NOT UserPhaseReg(2)));
+
+FTCPE_UserPhaseReg4: FTCPE port map (UserPhaseReg(4),UserPhaseReg_T(4),Clk,'0','0','1');
+UserPhaseReg_T(4) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	NOT BTN1_Buf.COMB AND N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND UserPhaseReg(0) AND 
+	UserPhaseReg(1) AND UserPhaseReg(2) AND UserPhaseReg(3))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND 
+	NOT BTN1_Buf.COMB AND N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(0) AND NOT UserPhaseReg(1) AND NOT UserPhaseReg(2) AND 
+	NOT UserPhaseReg(3)));
+
+FTCPE_UserPhaseReg5: FTCPE port map (UserPhaseReg(5),UserPhaseReg_T(5),Clk,'0','0','1');
+UserPhaseReg_T(5) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	UserPhaseReg(0) AND UserPhaseReg(1) AND UserPhaseReg(2) AND 
+	UserPhaseReg(3) AND UserPhaseReg(4))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(0) AND NOT UserPhaseReg(1) AND NOT UserPhaseReg(2) AND 
+	NOT UserPhaseReg(3) AND NOT UserPhaseReg(4)));
+
+FTCPE_UserPhaseReg6: FTCPE port map (UserPhaseReg(6),UserPhaseReg_T(6),Clk,'0','0','1');
+UserPhaseReg_T(6) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	UserPhaseReg(0) AND UserPhaseReg(1) AND UserPhaseReg(2) AND 
+	UserPhaseReg(3) AND UserPhaseReg(4) AND UserPhaseReg(5))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(0) AND NOT UserPhaseReg(1) AND NOT UserPhaseReg(2) AND 
+	NOT UserPhaseReg(3) AND NOT UserPhaseReg(4) AND NOT UserPhaseReg(5)));
+
+FTCPE_UserPhaseReg7: FTCPE port map (UserPhaseReg(7),UserPhaseReg_T(7),Clk,'0','0','1');
+UserPhaseReg_T(7) <= ((NOT SW1_Buf AND ButtonTimeOutCounter(4) AND BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf AND 
+	UserPhaseReg(6) AND UserPhaseReg(0) AND UserPhaseReg(1) AND 
+	UserPhaseReg(2) AND UserPhaseReg(3) AND UserPhaseReg(4) AND 
+	UserPhaseReg(5))
+	OR (NOT SW1_Buf AND ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND 
+	N_PZ_890 AND NOT SW0_Buf AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf AND 
+	NOT UserPhaseReg(6) AND NOT UserPhaseReg(0) AND NOT UserPhaseReg(1) AND 
+	NOT UserPhaseReg(2) AND NOT UserPhaseReg(3) AND NOT UserPhaseReg(4) AND 
+	NOT UserPhaseReg(5)));
+
+FDCPE_WaveformCorrReg0: FDCPE port map (WaveformCorrReg(0),WaveformCorrReg_D(0),Clk,'0','0','1');
+WaveformCorrReg_D(0) <= NOT (((NOT WaveformTypeReg(0) AND NOT WaveformReg(0))
+	OR (WaveformTypeReg(0) AND WaveformTypeReg(1) AND 
+	WaveformReg(0))
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))));
+
+FDCPE_WaveformCorrReg1: FDCPE port map (WaveformCorrReg(1),WaveformCorrReg_D(1),Clk,'0','0','1');
+WaveformCorrReg_D(1) <= NOT (((N_PZ_712 AND WaveformReg(1))
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(0) AND NOT N_PZ_712 AND NOT WaveformReg(1))));
+
+FDCPE_WaveformCorrReg2: FDCPE port map (WaveformCorrReg(2),WaveformCorrReg_D(2),Clk,'0','0','1');
+WaveformCorrReg_D(2) <= NOT (((N_PZ_712 AND WaveformReg(2))
+	OR (N_PZ_995 AND NOT WaveformReg(2))
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(1) AND WaveformReg(2))
+	OR (NOT WaveformTypeReg(1) AND NOT WaveformReg(0) AND 
+	WaveformReg(7) AND NOT WaveformReg(1) AND NOT WaveformReg(2))));
+
+FDCPE_WaveformCorrReg3: FDCPE port map (WaveformCorrReg(3),WaveformCorrReg_D(3),Clk,'0','0','1');
+WaveformCorrReg_D(3) <= NOT (((N_PZ_712 AND WaveformReg(3))
+	OR (N_PZ_995 AND NOT WaveformReg(3))
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(1) AND NOT WaveformReg(0) AND 
+	WaveformReg(7) AND N_PZ_920)
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(1) AND WaveformReg(3))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(2) AND WaveformReg(3))));
+
+FDCPE_WaveformCorrReg4: FDCPE port map (WaveformCorrReg(4),WaveformCorrReg_D(4),Clk,'0','0','1');
+WaveformCorrReg_D(4) <= NOT (((WaveformReg(4) AND N_PZ_712)
+	OR (NOT WaveformReg(4) AND N_PZ_995)
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(4) AND NOT N_PZ_920)
+	OR (NOT WaveformTypeReg(1) AND NOT WaveformReg(0) AND 
+	WaveformReg(7) AND NOT WaveformReg(4) AND N_PZ_920)));
+
+FDCPE_WaveformCorrReg5: FDCPE port map (WaveformCorrReg(5),WaveformCorrReg_D(5),Clk,'0','0','1');
+WaveformCorrReg_D(5) <= NOT (((N_PZ_712 AND WaveformReg(5))
+	OR (N_PZ_995 AND NOT WaveformReg(5))
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(4) AND WaveformReg(5))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND NOT N_PZ_920 AND 
+	WaveformReg(5))
+	OR (NOT WaveformTypeReg(1) AND NOT WaveformReg(0) AND 
+	WaveformReg(7) AND NOT WaveformReg(4) AND N_PZ_920 AND NOT WaveformReg(5))));
+
+FDCPE_WaveformCorrReg6: FDCPE port map (WaveformCorrReg(6),WaveformCorrReg_D(6),Clk,'0','0','1');
+WaveformCorrReg_D(6) <= NOT (((N_PZ_712 AND WaveformReg(6))
+	OR (N_PZ_995 AND NOT WaveformReg(6))
+	OR (WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(4) AND WaveformReg(6))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND NOT N_PZ_920 AND 
+	WaveformReg(6))
+	OR (NOT WaveformTypeReg(1) AND WaveformReg(7) AND 
+	WaveformReg(6) AND WaveformReg(5))
+	OR (NOT WaveformTypeReg(1) AND NOT WaveformReg(0) AND 
+	WaveformReg(7) AND NOT WaveformReg(4) AND N_PZ_920 AND NOT WaveformReg(6) AND 
+	NOT WaveformReg(5))));
+
+FDCPE_WaveformCorrReg7: FDCPE port map (WaveformCorrReg(7),WaveformCorrReg_D(7),Clk,'0','0','1');
+WaveformCorrReg_D(7) <= NOT (((NOT WaveformReg(7) AND NOT N_PZ_712)
+	OR (WaveformTypeReg(0) AND WaveformTypeReg(1) AND 
+	WaveformReg(7))
+	OR (NOT WaveformTypeReg(0) AND NOT WaveformTypeReg(1) AND 
+	WaveformReg(7) AND NOT WaveformReg(4) AND NOT N_PZ_712 AND N_PZ_920 AND 
+	NOT WaveformReg(6) AND NOT WaveformReg(5))));
+
+FDCPE_WaveformReg0: FDCPE port map (WaveformReg(0),WaveformReg_D(0),Clk,'0','0','1');
+WaveformReg_D(0) <= NOT (((WaveformTypeReg(1) AND NOT PhaseReg(0))
+	OR (PhaseReg(0) AND N_PZ_888 AND N_PZ_1044)
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(4) AND N_PZ_1044)
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(6) AND NOT PhaseReg(5) AND 
+	N_PZ_700)
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(6) AND N_PZ_888 AND 
+	NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(5) AND N_PZ_700)
+	OR (NOT WaveformTypeReg(1) AND N_PZ_888 AND NOT N_PZ_700 AND 
+	PhaseReg(1) AND NOT N_PZ_1044)
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(5) AND NOT PhaseReg(4) AND 
+	NOT N_PZ_700 AND NOT PhaseReg(1))
+	OR (PhaseReg(5) AND NOT N_PZ_888 AND NOT N_PZ_700 AND PhaseReg(1) AND 
+	NOT N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(4) AND NOT PhaseReg(3) AND NOT N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND NOT PhaseReg(5) AND 
+	NOT PhaseReg(4) AND PhaseReg(3) AND NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND PhaseReg(5) AND 
+	PhaseReg(1) AND NOT PhaseReg(3) AND NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND NOT PhaseReg(5) AND 
+	NOT PhaseReg(4) AND NOT PhaseReg(1) AND NOT N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND NOT PhaseReg(5) AND 
+	PhaseReg(4) AND NOT PhaseReg(1) AND NOT N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(4) AND N_PZ_700 AND 
+	NOT PhaseReg(1) AND NOT N_PZ_942 AND NOT N_PZ_1044)
+	OR (NOT PhaseReg(0) AND PhaseReg(6) AND PhaseReg(4) AND 
+	PhaseReg(1) AND NOT PhaseReg(3) AND NOT N_PZ_1044)
+	OR (PhaseReg(6) AND PhaseReg(5) AND NOT N_PZ_888 AND N_PZ_700 AND 
+	PhaseReg(2) AND N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND NOT PhaseReg(5) AND 
+	PhaseReg(4) AND N_PZ_700 AND NOT PhaseReg(2) AND N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND NOT N_PZ_888 AND 
+	NOT N_PZ_700 AND NOT PhaseReg(1) AND NOT N_PZ_921 AND NOT N_PZ_1044)));
+
+FDCPE_WaveformReg1: FDCPE port map (WaveformReg(1),WaveformReg_D(1),Clk,'0','0','1');
+WaveformReg_D(1) <= ((WaveformTypeReg(1) AND PhaseReg(1))
+	OR (PhaseReg(0) AND PhaseReg(1) AND N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(1) AND 
+	N_PZ_1044)
+	OR (NOT PhaseReg(6) AND NOT PhaseReg(5) AND NOT PhaseReg(2) AND 
+	N_PZ_921)
+	OR (N_PZ_888 AND PhaseReg(1) AND PhaseReg(3) AND 
+	NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND PhaseReg(5) AND 
+	PhaseReg(2) AND N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND NOT N_PZ_700 AND 
+	PhaseReg(2) AND N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND N_PZ_888 AND NOT PhaseReg(1) AND 
+	NOT PhaseReg(3) AND NOT N_PZ_1044)
+	OR (PhaseReg(0) AND PhaseReg(6) AND NOT PhaseReg(4) AND 
+	N_PZ_700 AND PhaseReg(1))
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(6) AND NOT N_PZ_888 AND NOT N_PZ_942 AND 
+	NOT N_PZ_1044)
+	OR (PhaseReg(6) AND NOT PhaseReg(5) AND N_PZ_700 AND 
+	PhaseReg(1) AND NOT N_PZ_921)
+	OR (NOT PhaseReg(6) AND PhaseReg(5) AND NOT N_PZ_700 AND 
+	PhaseReg(1) AND N_PZ_942)
+	OR (NOT PhaseReg(5) AND NOT PhaseReg(4) AND PhaseReg(1) AND 
+	PhaseReg(3) AND NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(5) AND NOT N_PZ_921 AND NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(6) AND 
+	NOT PhaseReg(5) AND NOT PhaseReg(1) AND NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(4) AND NOT N_PZ_942 AND NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(4) AND 
+	NOT N_PZ_888 AND NOT N_PZ_700 AND N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(6) AND 
+	PhaseReg(5) AND NOT PhaseReg(4) AND NOT N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(6) AND 
+	PhaseReg(4) AND N_PZ_700 AND NOT PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND PhaseReg(5) AND 
+	NOT N_PZ_888 AND NOT N_PZ_700 AND N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND PhaseReg(5) AND 
+	N_PZ_700 AND NOT PhaseReg(1) AND NOT N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(5) AND NOT PhaseReg(4) AND 
+	N_PZ_700 AND NOT PhaseReg(3) AND NOT N_PZ_1044));
+
+FDCPE_WaveformReg2: FDCPE port map (WaveformReg(2),WaveformReg_D(2),Clk,'0','0','1');
+WaveformReg_D(2) <= NOT ((NOT WaveformTypeReg(1) AND PhaseReg(1))
+	XOR ((WaveformTypeReg(1) AND NOT PhaseReg(2))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(2) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(5) AND 
+	PhaseReg(4) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND N_PZ_888 AND 
+	PhaseReg(2) AND NOT PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(5) AND NOT PhaseReg(4) AND 
+	PhaseReg(2) AND PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND N_PZ_888 AND PhaseReg(2) AND 
+	NOT PhaseReg(1) AND NOT PhaseReg(3))
+	OR (PhaseReg(0) AND PhaseReg(5) AND NOT PhaseReg(2) AND 
+	PhaseReg(1) AND PhaseReg(3))
+	OR (NOT PhaseReg(0) AND NOT PhaseReg(6) AND NOT PhaseReg(5) AND 
+	NOT PhaseReg(2) AND NOT PhaseReg(1))
+	OR (NOT PhaseReg(0) AND PhaseReg(5) AND NOT PhaseReg(4) AND 
+	NOT PhaseReg(2) AND NOT PhaseReg(3))
+	OR (NOT PhaseReg(6) AND PhaseReg(5) AND NOT PhaseReg(2) AND 
+	PhaseReg(1) AND PhaseReg(3))
+	OR (NOT PhaseReg(6) AND NOT PhaseReg(5) AND PhaseReg(4) AND 
+	NOT PhaseReg(2) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND NOT PhaseReg(6) AND 
+	PhaseReg(5) AND PhaseReg(1) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND NOT PhaseReg(6) AND 
+	NOT PhaseReg(5) AND PhaseReg(2) AND NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND NOT PhaseReg(4) AND 
+	PhaseReg(2) AND NOT PhaseReg(1) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND PhaseReg(6) AND 
+	NOT PhaseReg(5) AND PhaseReg(2) AND PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(6) AND 
+	PhaseReg(5) AND NOT PhaseReg(4) AND NOT PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND PhaseReg(5) AND 
+	PhaseReg(4) AND PhaseReg(2) AND PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND NOT PhaseReg(5) AND 
+	NOT PhaseReg(4) AND PhaseReg(1) AND NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND PhaseReg(5) AND 
+	PhaseReg(4) AND PhaseReg(2) AND PhaseReg(1))
+	OR (PhaseReg(0) AND PhaseReg(6) AND PhaseReg(5) AND 
+	PhaseReg(4) AND NOT PhaseReg(2) AND PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(5) AND NOT PhaseReg(4) AND NOT PhaseReg(1) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(6) AND 
+	PhaseReg(5) AND PhaseReg(2) AND PhaseReg(1) AND NOT PhaseReg(3))
+	OR (PhaseReg(0) AND PhaseReg(6) AND NOT PhaseReg(5) AND 
+	PhaseReg(4) AND NOT PhaseReg(2) AND NOT PhaseReg(1) AND NOT PhaseReg(3))));
+
+FDCPE_WaveformReg3: FDCPE port map (WaveformReg(3),WaveformReg_D(3),Clk,'0','0','1');
+WaveformReg_D(3) <= ((WaveformTypeReg(1) AND PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND N_PZ_888 AND N_PZ_921 AND 
+	NOT N_PZ_1044)
+	OR (NOT PhaseReg(6) AND PhaseReg(4) AND NOT N_PZ_700 AND 
+	NOT PhaseReg(2))
+	OR (NOT PhaseReg(4) AND N_PZ_700 AND NOT N_PZ_942 AND N_PZ_1044)
+	OR (N_PZ_888 AND N_PZ_700 AND NOT PhaseReg(1) AND N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(0) AND PhaseReg(5) AND 
+	NOT N_PZ_700 AND PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND NOT PhaseReg(5) AND 
+	NOT N_PZ_700 AND NOT PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND N_PZ_888 AND 
+	PhaseReg(1) AND NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND NOT N_PZ_700 AND 
+	NOT PhaseReg(3) AND NOT N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND PhaseReg(5) AND 
+	NOT PhaseReg(4) AND NOT N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(5) AND NOT PhaseReg(4) AND 
+	NOT PhaseReg(2) AND NOT N_PZ_1044)
+	OR (PhaseReg(0) AND NOT PhaseReg(4) AND NOT PhaseReg(1) AND 
+	PhaseReg(3) AND N_PZ_1044)
+	OR (PhaseReg(6) AND PhaseReg(4) AND NOT N_PZ_888 AND N_PZ_700 AND 
+	NOT N_PZ_942)
+	OR (PhaseReg(6) AND NOT PhaseReg(4) AND N_PZ_700 AND 
+	NOT PhaseReg(1) AND N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(0) AND PhaseReg(6) AND 
+	PhaseReg(5) AND N_PZ_700 AND NOT PhaseReg(1))
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(6) AND NOT PhaseReg(5) AND 
+	PhaseReg(1) AND NOT PhaseReg(3) AND N_PZ_942)
+	OR (PhaseReg(0) AND NOT PhaseReg(6) AND NOT PhaseReg(5) AND 
+	N_PZ_700 AND PhaseReg(1) AND NOT N_PZ_942));
+
+FDCPE_WaveformReg4: FDCPE port map (WaveformReg(4),WaveformReg_D(4),Clk,'0','0','1');
+WaveformReg_D(4) <= NOT (((WaveformTypeReg(1) AND NOT PhaseReg(4))
+	OR (N_PZ_700 AND N_PZ_1044)
+	OR (N_PZ_921 AND N_PZ_942 AND N_PZ_1044)
+	OR (NOT PhaseReg(6) AND NOT PhaseReg(4) AND NOT PhaseReg(2) AND 
+	N_PZ_921)
+	OR (PhaseReg(5) AND NOT N_PZ_888 AND NOT N_PZ_700 AND NOT PhaseReg(3))
+	OR (PhaseReg(5) AND NOT N_PZ_888 AND NOT N_PZ_700 AND NOT N_PZ_921)
+	OR (NOT PhaseReg(4) AND PhaseReg(1) AND NOT N_PZ_921 AND 
+	N_PZ_1044)
+	OR (N_PZ_888 AND NOT PhaseReg(1) AND NOT N_PZ_942 AND N_PZ_1044)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND PhaseReg(4) AND 
+	PhaseReg(2) AND N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(4) AND NOT N_PZ_888 AND 
+	NOT N_PZ_700 AND NOT PhaseReg(2))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(4) AND NOT N_PZ_888 AND 
+	NOT N_PZ_700 AND NOT N_PZ_942)));
+
+FDCPE_WaveformReg5: FDCPE port map (WaveformReg(5),WaveformReg_D(5),Clk,'0','0','1');
+WaveformReg_D(5) <= ((WaveformTypeReg(1) AND PhaseReg(5))
+	OR (NOT PhaseReg(6) AND PhaseReg(5) AND PhaseReg(3))
+	OR (NOT PhaseReg(6) AND PhaseReg(5) AND N_PZ_921)
+	OR (N_PZ_888 AND NOT PhaseReg(1) AND NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND NOT PhaseReg(5) AND 
+	NOT PhaseReg(3))
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND NOT PhaseReg(5) AND 
+	N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(4) AND NOT PhaseReg(3) AND 
+	N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(4) AND PhaseReg(3) AND 
+	N_PZ_921)
+	OR (NOT WaveformTypeReg(1) AND NOT PhaseReg(5) AND NOT PhaseReg(4) AND 
+	PhaseReg(1) AND PhaseReg(3)));
+
+FDCPE_WaveformReg6: FDCPE port map (WaveformReg(6),WaveformReg_D(6),Clk,'0','0','1');
+WaveformReg_D(6) <= NOT (((N_PZ_1044)
+	OR (WaveformTypeReg(1) AND NOT PhaseReg(6))
+	OR (NOT PhaseReg(6) AND NOT PhaseReg(5) AND NOT PhaseReg(3) AND 
+	N_PZ_942)
+	OR (NOT WaveformTypeReg(1) AND PhaseReg(6) AND PhaseReg(5) AND 
+	PhaseReg(3) AND N_PZ_921)));
+
+FDCPE_WaveformReg7: FDCPE port map (WaveformReg(7),PhaseReg(7),Clk,'0','0','1');
+
+FTCPE_WaveformTypeReg0: FTCPE port map (WaveformTypeReg(0),WaveformTypeReg_T(0),Clk,'0','0','1');
+WaveformTypeReg_T(0) <= (SW1_Buf AND ButtonTimeOutCounter(4) AND 
+	NOT BTN1_Buf.COMB AND N_PZ_890 AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7));
+
+FTCPE_WaveformTypeReg1: FTCPE port map (WaveformTypeReg(1),WaveformTypeReg_T(1),Clk,'0','0','1');
+WaveformTypeReg_T(1) <= ((WaveformTypeReg(0) AND SW1_Buf AND 
+	ButtonTimeOutCounter(4) AND BTN1_Buf AND N_PZ_890 AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND NOT BTN0_Buf)
+	OR (NOT WaveformTypeReg(0) AND SW1_Buf AND 
+	ButtonTimeOutCounter(4) AND NOT BTN1_Buf AND N_PZ_890 AND ButtonTimeOutCounter(5) AND 
+	ButtonTimeOutCounter(6) AND ButtonTimeOutCounter(7) AND BTN0_Buf));
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC2C256-7-TQ144
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 VCC                              73 VCCIO-3.3                     
+  2 DAC12_Clk_Copy                   74 WPU                           
+  3 DAC12_Clk                        75 WPU                           
+  4 DAC2_Data_R_Copy                 76 WPU                           
+  5 DAC2_Data_R                      77 WPU                           
+  6 DAC1_Data_R_Copy                 78 WPU                           
+  7 DAC1_Data_R                      79 WPU                           
+  8 VCCAUX                           80 WPU                           
+  9 DAC12_nLE_R_Copy                 81 WPU                           
+ 10 DAC12_nLE_R                      82 WPU                           
+ 11 WPU                              83 WPU                           
+ 12 WPU                              84 VCC                           
+ 13 WPU                              85 WPU                           
+ 14 WPU                              86 WPU                           
+ 15 WPU                              87 WPU                           
+ 16 WPU                              88 WPU                           
+ 17 WPU                              89 GND                           
+ 18 WPU                              90 GND                           
+ 19 WPU                              91 WPU                           
+ 20 WPU                              92 WPU                           
+ 21 WPU                              93 VCCIO-3.3                     
+ 22 WPU                              94 BTN1                          
+ 23 WPU                              95 WPU                           
+ 24 WPU                              96 DAC78_Clk_Copy                
+ 25 WPU                              97 DAC78_Clk                     
+ 26 WPU                              98 DAC8_Data_R_Copy              
+ 27 VCCIO-3.3                        99 GND                           
+ 28 WPU                             100 DAC8_Data_R                   
+ 29 GND                             101 DAC7_Data_R_Copy              
+ 30 WPU                             102 DAC7_Data_R                   
+ 31 WPU                             103 DAC78_nLE_R_Copy              
+ 32 WPU                             104 DAC78_nLE_R                   
+ 33 WPU                             105 WPU                           
+ 34 WPU                             106 WPU                           
+ 35 WPU                             107 WPU                           
+ 36 GND                             108 GND                           
+ 37 VCC                             109 VCCIO-3.3                     
+ 38 Clk                             110 WPU                           
+ 39 SW0                             111 WPU                           
+ 40 WPU                             112 DAC56_Clk_Copy                
+ 41 WPU                             113 DAC56_Clk                     
+ 42 WPU                             114 DAC6_Data_R_Copy              
+ 43 WPU                             115 DAC6_Data_R                   
+ 44 WPU                             116 DAC5_Data_R_Copy              
+ 45 WPU                             117 DAC5_Data_R                   
+ 46 WPU                             118 DAC56_nLE_R_Copy              
+ 47 GND                             119 DAC56_nLE_R                   
+ 48 WPU                             120 WPU                           
+ 49 WPU                             121 WPU                           
+ 50 WPU                             122 TDO                           
+ 51 WPU                             123 GND                           
+ 52 WPU                             124 SW1                           
+ 53 CB                              125 WPU                           
+ 54 CF                              126 Digit0                        
+ 55 VCCIO-3.3                       127 VCCIO-3.3                     
+ 56 CA                              128 Digit1                        
+ 57 CE                              129 Digit2                        
+ 58 CD                              130 Digit3                        
+ 59 DP                              131 WPU                           
+ 60 CC                              132 WPU                           
+ 61 CG                              133 DAC34_Clk_Copy                
+ 62 GND                             134 DAC34_Clk                     
+ 63 TDI                             135 DAC4_Data_R_Copy              
+ 64 LD3                             136 DAC4_Data_R                   
+ 65 TMS                             137 WPU                           
+ 66 LD2                             138 DAC3_Data_R_Copy              
+ 67 TCK                             139 DAC3_Data_R                   
+ 68 LD1                             140 DAC34_nLE_R_Copy              
+ 69 LD0                             141 VCCIO-3.3                     
+ 70 WPU                             142 DAC34_nLE_R                   
+ 71 WPU                             143 BTN0                          
+ 72 GND                             144 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+        PGND  = Unused I/O configured as additional Ground pin
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         WPU  = Unused I/O with weak pull up (leave unconnected)
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+      VCCAUX  = Power supply for JTAG pins
+   VCCIO-3.3  = I/O supply voltage for LVTTL, LVCMOS33, SSTL3_I
+   VCCIO-2.5  = I/O supply voltage for LVCMOS25, SSTL2_I
+   VCCIO-1.8  = I/O supply voltage for LVCMOS18
+   VCCIO-1.5  = I/O supply voltage for LVCMOS15, HSTL_I
+        VREF  = Reference voltage for indicated input standard
+       *VREF  = Reference voltage pin selected by software
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c256-7-TQ144
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : SLOW
+Set Unused I/O Pin Termination              : PULLUP
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : PULLUP
+Default Voltage Standard for All Outputs    : LVCMOS33
+Input Limit                                 : 32
+Pterm Limit                                 : 28
